@@ -4,9 +4,10 @@
     let industriessettings = {
         // Core
         corporation_id: 0,
+        blueprint_id: {{ blueprint_id }},
         csrf: "{{ csrf_token }}",
         // URLs
-        IndustryTestUrl: '{% url "industries:api:get_blueprint_industry" blueprint_id=999 %}',
+        IndustryTestUrl: '{% url "industries:api:get_blueprint_industry" blueprint_id=0 %}',
         // Update URLs
 
         // Translations

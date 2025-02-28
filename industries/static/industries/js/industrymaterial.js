@@ -1,34 +1,5 @@
-{% load i18n %}
-{% load bootstrap %}
-
-<div class="card-body">
-    <form class="form w-25" id="blueprintform" action="{% url 'industries:index' %}" method="POST">
-        {% csrf_token %}
-        {{ form|bootstrap }}
-        <button type="submit" class="btn btn-primary">{% trans "Submit" %}</button>
-    </form>
-</div>
-<div class="table-responsive">
-    <!-- Materials Content-->
-    <table class="table table-dark table-striped w-100 tax-table-hover tax-table-striped" id="materials">
-        <thead>
-            <tr>
-                <th scope="col">{% translate "" %}</th>
-                <th scope="col">{% translate "Material Name" %}</th>
-                <th scope="col">{% translate "Quantity" %}</th>
-                <th scope="col">{% translate "Details" %}</th>
-            </tr>
-        </thead>
-        <tbody id="materials-body">
-            <!-- Material Rows will be inserted here by JavaScript -->
-        </tbody>
-    </table>
-</div>
-
-<script>
-/* global industriessettings bootstrap */
-
-document.addEventListener('DOMContentLoaded', function () {
+/* global industriessettings */
+$(document).ready(() => {
     const industries = $('#materials');
     const blueprint_url = industriessettings.IndustryTestUrl.replace('0', industriessettings.blueprint_id);
 
@@ -101,5 +72,3 @@ document.addEventListener('DOMContentLoaded', function () {
         return submaterialsHtml;
     }
 });
-
-</script>

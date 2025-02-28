@@ -9,7 +9,11 @@ app_name: str = "industries"
 
 urlpatterns = [
     path("", views.index, name="index"),
-    path("industry/", views.industry, name="industry"),
+    path(
+        "blueprint-autocomplete/",
+        views.blueprint_autocomplete,
+        name="blueprint_autocomplete",
+    ),
     # -- API System
     re_path(r"^api/", api.urls),
 ]
