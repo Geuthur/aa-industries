@@ -2,9 +2,11 @@ from typing import Any
 
 from ninja import NinjaAPI
 
+from django.shortcuts import render, resolve_url
 from django.utils.translation import gettext as _
 from eveuniverse.models import EveIndustryActivityMaterial, EveType, EveTypeMaterial
 
+from industries.api.helpers import generate_button
 from industries.constants import (
     AA_INDUSTRIES_CONSTRUCTION_CHAIN,
     AA_INDUSTRIES_PRODUCTION_CHAIN,
@@ -79,10 +81,42 @@ def get_materials(material: EveIndustryActivityMaterial):
     return material_dict
 
 
+def get_details(request, material: EveIndustryActivityMaterial):
+    """Get details for a material"""
+    if (
+        material.material_eve_type.eve_group.eve_category.id == 9
+        or material.material_eve_type.eve_group.id
+        in (AA_INDUSTRIES_CONSTRUCTION_CHAIN + AA_INDUSTRIES_PRODUCTION_CHAIN)
+    ):
+        template = "industries/partials/form/button.html"
+        settings = {
+            "title": _("Materials"),
+            "icon": "fas fa-info",
+            "color": "primary",
+            "text": _("View Submaterials"),
+            "modal": "modalViewDetailsContainer",
+            "action": resolve_url(
+                "industries:api:get_test", eve_id=material.material_eve_type.id
+            ),
+            "ajax": "ajax_details",
+        }
+
+        details_html = generate_button(
+            corporation_id=0,
+            template=template,
+            queryset=material,
+            settings=settings,
+            request=request,
+        )
+        return details_html
+    return ""
+
+
 class SearchApiEndpoints:
 
     tags = ["Search"]
 
+    # pylint: disable=too-many-statements
     def __init__(self, api: NinjaAPI):
         @api.get(
             "/blueprint/{blueprint_id}/view/industry/",
@@ -112,11 +146,6 @@ class SearchApiEndpoints:
             materials_data = []
 
             for material in materials:
-                has_submaterials = (
-                    material.material_eve_type.eve_group.eve_category.id == 9
-                    or material.material_eve_type.eve_group.id
-                    in AA_INDUSTRIES_CONSTRUCTION_CHAIN
-                )
                 materials_data.append(
                     {
                         "portrait": lazy.get_type_icon_url(
@@ -129,7 +158,7 @@ class SearchApiEndpoints:
                         "material_eve_type_id": material.material_eve_type.id,
                         "material_eve_type__group__id": material.material_eve_type.eve_group.id,
                         "quantity": material.quantity,
-                        "has_submaterials": has_submaterials,
+                        "details": get_details(request=request, material=material),
                     }
                 )
 
@@ -219,7 +248,7 @@ class SearchApiEndpoints:
             if not request.user.has_perm("industries.basic_access"):
                 return 403, _("Permission Denied")
 
-            evetype, __ = EveType.objects.get(id=eve_id)
+            evetype = EveType.objects.get(id=eve_id)
             if not EveTypeMaterial.objects.filter(eve_type=evetype).exists():
                 EveTypeMaterial.objects.update_or_create_api(eve_type=evetype)
 
@@ -242,3 +271,40 @@ class SearchApiEndpoints:
             }
 
             return industry_data
+
+        @api.get("evetype/{eve_id}/view/details/", response={200: Any}, tags=["Search"])
+        def get_test(request, eve_id: str):
+            if not request.user.has_perm("industries.basic_access"):
+                return 403, _("Permission Denied")
+
+            reaction_blueprint = None
+            evetype = EveType.objects.get(id=eve_id)
+            EveTypeMaterial.objects.update_or_create_api(eve_type=evetype)
+
+            if evetype.eve_group.id in AA_INDUSTRIES_PRODUCTION_CHAIN:
+                reaction_blueprint = get_reaction_blueprint(evetype)
+
+            if reaction_blueprint is not None:
+                materials = EveIndustryActivityMaterial.objects.filter(
+                    eve_type=reaction_blueprint
+                )
+            else:
+                materials = EveTypeMaterial.objects.filter(eve_type=evetype)
+
+            materials_data = []
+
+            for material in materials:
+                material_dict = get_materials(material)
+                materials_data.append(material_dict)
+
+            context = {
+                "name": evetype.name,
+                "eve_id": evetype.id,
+                "materials": materials_data,
+            }
+
+            return render(
+                request,
+                "industries/modals/view_details_materials.html",
+                context,
+            )

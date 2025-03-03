@@ -1,0 +1,23 @@
+
+{% load i18n %}
+{% load static %}
+{% load evelinks %}
+{% load humanize %}
+
+{% if materials %}
+    <h4 class="d-none" id="modal-title">
+        {% translate "Materials" %}
+    </h4>
+    <input type="hidden" id="modal-hidden-url" value="">
+    <div class="row py-2">
+        <h5 class="card-title text-center">
+            <span id="dashboard-division">{{ name }} (ID: {{ eve_id }})</span>
+        </h5>
+        <hr>
+        {% for material in materials %}
+            {% render_material material %}
+        {% endfor %}
+    </div>
+{% else %}
+    {% translate "No Blueprint found." %}
+{% endif %}

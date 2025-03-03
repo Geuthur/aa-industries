@@ -67,3 +67,15 @@ def industries_static(relative_file_path: str, script_type: str = None) -> str |
         )
 
     return None
+
+
+@register.inclusion_tag("industries/partials/materials_recursive.html")
+def render_material(material):
+    """Recursively render materials"""
+    return {"material": material}
+
+
+@register.inclusion_tag("industries/partials/submaterials_recursive.html")
+def render_submaterial(material):
+    """Recursively render materials"""
+    return {"material": material}

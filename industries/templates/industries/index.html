@@ -1,20 +1,121 @@
 {% extends 'industries/base.html' %}
 {% load i18n %}
 {% load humanize %}
-{% block industries_block %}
-    <div class="card-title bg-primary rounded-top px-2">
-        <h3>Industry</h3>
-    </div>
-    <div class="card-body">
-        Welcome to Industry.
-    </div>
-{% endblock industries_block %}
+{% load bootstrap %}
+{% load static %}
+{% load industries %}
 
-{% block extra_javascript %}
+{% block page_title %}
+    {{ title }} ⋗ {% translate "Industries" %}
+{% endblock %}
+
+{% block page_topic %}
+    <h1 class="page-header text-center">
+        {{ title }}
+    </h1>
+{% endblock page_topic %}
+
+{% block header_nav_collapse_left %}
+{% endblock header_nav_collapse_left %}
+
+{% block header_nav_collapse_right %}
+{% endblock header_nav_collapse_right %}
+
+{% block industries_block %}
+<div class="mb-4">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary rounded">
+        <div class="container-fluid justify-content-start">
+            <div class="collapse navbar-collapse" id="navbarexpand">
+                <!-- Navbar Tabs -->
+                <ul class="nav nav-pills w-100" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="pills-industry-tab" data-bs-toggle="pill" href="#pills-industry" role="tab" aria-controls="pills-industry" aria-selected="true">
+                            <h4 class="me-3">{% translate "Industry" %}</h4>
+                        </a>
+                    </li>
+                    <li class="nav-item ms-auto" role="presentation">
+                        <a class="nav-link" id="pills-corporations-tab" data-bs-toggle="pill" href="#pills-corporations" role="tab" aria-controls="pills-corporations" aria-selected="false">
+                            <h4 class="me-3">{% translate "Corporations" %}</h4>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+<div class="card card-body bg-secondary tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="pills-industry" role="tabpanel" aria-labelledby="pills-industry-tab">
+        {% include 'industries/partials/table/materials.html' %}
+    </div>
+    <div class="tab-pane fade" id="pills-corporations" role="tabpanel" aria-labelledby="pills-corporations-tab">
+        Corps
+    </div>
+</div>
+{% include 'industries/modals/modal.html' with name="ViewDetails" %}
 {% endblock %}
 
 {% block extra_css %}
 {% endblock %}
 
+{% block extra_javascript %}
+    <!-- load modals -->
+    {% include 'industries/bundles/modal-js.html' %}
+    <script>
+        setupModal('#modalViewDetailsContainer', 'ajax_details', '#modalViewDetailsContent', '#modalViewDetailsLoader');
+    </script>
+    <!-- load the datatables-js-bs5.html bundle -->
+    {% include "bundles/jquery-ui-js.html" %}
+    {% include "bundles/jquery-ui-css.html" %}
+    {% include 'bundles/datatables-js-bs5.html' %}
+    {% include "bundles/filterdropdown-js.html" %}
+    <!-- load the settings bundle -->
+    {% include "industries/bundles/settings-css.html" %}
+    {% include 'industries/bundles/settings-js.html' %}
+    {% industries_static 'js/industrymaterial.js' %}
+{% endblock extra_javascript %}
+
 {% block extra_script %}
-{% endblock %}
+
+    $(document).ready(function() {
+        $("#id_blueprint").autocomplete({
+            source: "{% url 'industries:blueprint_autocomplete' %}",
+            minLength: 3,
+            autoFocus: true,
+            select: function(event, ui){
+                SearchTypeID(ui.item.label, ui.item.value);
+                updateURLParameter('blueprint_id', ui.item.value);
+                $("#blueprintform").submit();
+                event.preventDefault();
+            },
+            focus: function(event, ui){
+                event.preventDefault();
+            },
+        });
+
+        // Handle form submission via AJAX
+        $("#blueprintform").submit(function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            const blueprint_id = $("#id_blueprint_id").val();
+            const material_url = industriessettings.IndustryTestUrl.replace('0', blueprint_id);
+
+            // Update DataTable with new URL
+            const industriesTable = $('#materials').DataTable();
+            industriesTable.ajax.url(material_url).load();
+
+            // Update the URL with the blueprint_id parameter
+            updateURLParameter('blueprint_id', blueprint_id);
+        });
+    });
+
+    function SearchTypeID(eve_type_name, eve_type_id) {
+        $("#id_blueprint_id").val(eve_type_id);
+        $("#id_blueprint").val(eve_type_name);
+    };
+
+    function updateURLParameter(param, value) {
+        const url = new URL(window.location);
+        url.searchParams.set(param, value);
+        window.history.replaceState({}, '', url);
+    }
+{% endblock extra_script %}
