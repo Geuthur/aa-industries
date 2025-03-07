@@ -13,6 +13,7 @@ class BlueprintForm(forms.Form):
 
     blueprint_id = forms.IntegerField(
         label="Blueprint ID",
+        initial=0,
         required=False,
         widget=forms.HiddenInput(),
     )
