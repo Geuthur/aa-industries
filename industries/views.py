@@ -34,13 +34,12 @@ def index(request):
 
 @login_required
 @permission_required("industries.basic_access")
-def blueprint_autocomplete(request):
-    search_query = None
+def blueprint_autocomplete(request, search_query=None):
     if request.headers.get("x-requested-with") == "XMLHttpRequest":  # is_ajax
         search_query = request.GET.get("term")
 
     if not search_query:
-        return JsonResponse({"error": _("No search query")}, status=400)
+        return JsonResponse([], safe=False)
 
     items = EveType.objects.filter(
         published=True, eve_group__eve_category__id=9, name__icontains=search_query
