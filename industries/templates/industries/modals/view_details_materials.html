@@ -14,9 +14,36 @@
             <span id="dashboard-division">{{ name }} (ID: {{ eve_id }})</span>
         </h5>
         <hr>
-        {% for material in materials %}
-            {% render_material material %}
-        {% endfor %}
+        <div class="row">
+            <div class="col-md-6 py-2" style="min-width: 250px;">
+                <div class="card-body bg-secondary rounded">
+                    <h5>{{ material.portrait }} {{ material.material_eve_type__name }}</h5>
+                    <table class="table table-dark table-striped w-100">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Material Name</th>
+                                <th>Quantity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        {% for material in materials %}
+                            <tr>
+                                <td>{{ material.portrait }}</td>
+                                <td>{{ material.material_eve_type__name }}</td>
+                                <td>{{ material.quantity }}</td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            {% for material in materials %}
+                {% if material.materials %}
+                    {% render_submaterial material %}
+                {% endif %}
+            {% endfor %}
+        </div>
     </div>
 {% else %}
     {% translate "No Blueprint found." %}
