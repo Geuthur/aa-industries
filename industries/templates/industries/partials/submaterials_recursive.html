@@ -1,9 +1,11 @@
+{% load evelinks %}
 <div class="col-md-6 py-2">
     <div class="card-body bg-secondary rounded">
-        <h5>Sub-materials for {{ material.material_eve_type__name }}</h5>
+        <h5>Sub-materials for {{ material.portrait }} {{ material.material_eve_type__name }}</h5>
         <table class="table table-dark table-striped w-100">
             <thead>
                 <tr>
+                    <th></th>
                     <th>Sub-material Name</th>
                     <th>Quantity</th>
                 </tr>
@@ -11,6 +13,7 @@
             <tbody>
                 {% for submaterial in material.materials %}
                 <tr>
+                    <td>{{ submaterial.portrait }}</td>
                     <td>{{ submaterial.material_eve_type__name }}</td>
                     <td>{{ submaterial.quantity }}</td>
                 </tr>
