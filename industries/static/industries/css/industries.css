@@ -1,0 +1,26 @@
+@media all {
+    /* Blueprint Search CSS */
+    .ui-autocomplete {
+        max-height: 250px;
+        overflow: hidden auto;
+        padding-right: 20px;
+    }
+
+    .ui-menu {
+        background-color: rgba(58 58 58 / 100%);
+    }
+
+    .ui-menu-item {
+        transition: box-shadow 0.3s ease;
+    }
+
+    .ui-menu-item:hover {
+        box-shadow: 0 4px 8px rgba(0 0 0 / 30%);
+        background-color: rgba(0 0 0 / 80%)
+    }
+
+    .ui-widget {
+        border: 2px solid white;
+        border-radius: 0 0 10px 10px;
+    }
+}
