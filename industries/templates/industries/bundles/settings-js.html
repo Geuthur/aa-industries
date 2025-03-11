@@ -7,7 +7,8 @@
         blueprint_id: {{ blueprint_id }},
         csrf: "{{ csrf_token }}",
         // URLs
-        IndustryTestUrl: '{% url "industries:api:get_blueprint_industry" blueprint_id=0 %}',
+        IndustryBlueprintUrl: '{% url "industries:api:get_blueprint_industry" blueprint_id=0 %}',
+        IndustryBlueprintSearchUrl: '{% url "industries:blueprint_autocomplete" %}',
         // Update URLs
 
         // Translations
