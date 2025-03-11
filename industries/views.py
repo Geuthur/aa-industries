@@ -1,14 +1,16 @@
 """PvE Views"""
 
 # Django
+from django.contrib import messages
 from django.contrib.auth.decorators import login_required, permission_required
 from django.db.models import F
 from django.http import JsonResponse
-from django.shortcuts import render
+from django.shortcuts import redirect, render
 from django.utils.translation import gettext as _
 from eveuniverse.models import EveType
 
 from industries import forms
+from industries.app_settings import INDUSTRIES_APP_NAME
 
 from .hooks import get_extension_logger
 
@@ -18,6 +20,37 @@ logger = get_extension_logger(__name__)
 @login_required
 @permission_required("industries.basic_access")
 def index(request):
+    return redirect(
+        "industries:industry_character",
+        request.user.profile.main_character.corporation_id,
+    )
+
+
+@login_required
+@permission_required("industries.basic_access")
+def industry_character(request, character_id):
+    """Payments View"""
+    if character_id is None:
+        character_id = request.user.profile.main_character.corporation_id
+
+    perms = True
+
+    if perms is None:
+        messages.error(request, _("No corporation found."))
+        return redirect("industries:index")
+
+    context = {
+        "character_id": character_id,
+        "title": _("Index") + f" ⋗ {INDUSTRIES_APP_NAME}",
+    }
+    # context = add_info_to_context(request, context)
+
+    return render(request, "industries/index.html", context=context)
+
+
+@login_required
+@permission_required("industries.basic_access")
+def blueprint(request):
     blueprint_id = request.GET.get("blueprint_id", 0)
     form = forms.BlueprintForm(request.POST or None)
 
@@ -26,10 +59,11 @@ def index(request):
             blueprint_id = request.POST.get("blueprint_id", 0)
 
     context = {
+        "title": _("Blueprint Calculator") + f" ⋗ {INDUSTRIES_APP_NAME}",
         "form": form,
         "blueprint_id": blueprint_id,
     }
-    return render(request, "industries/index.html", context=context)
+    return render(request, "industries/blueprint.html", context=context)
 
 
 @login_required

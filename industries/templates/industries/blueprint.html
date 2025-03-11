@@ -6,7 +6,7 @@
 {% load industries %}
 
 {% block page_title %}
-    {{ title }}
+    {{ title }} ⋗ Industries
 {% endblock %}
 
 {% block page_topic %}
@@ -25,7 +25,7 @@
 
 {% block industries_block %}
 <div class="card card-body">
-    IN DEVELOPMENT
+    {% include 'industries/partials/table/materials.html' %}
 </div>
 {% include 'industries/modals/modal.html' with name="ViewDetails" %}
 {% endblock %}
