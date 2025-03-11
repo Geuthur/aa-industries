@@ -1,0 +1,2143 @@
+{
+    "blueprint": "Arazu Blueprint",
+    "blueprint_id": 11970,
+    "materials": [
+      {
+        "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/633/icon?size=32\" alt=\"Celestis\"\u003E",
+        "material_eve_type__name": "Celestis",
+        "material_eve_type_id": 633,
+        "material_eve_type__group__id": 26,
+        "quantity": 1,
+        "submaterial": [
+          {
+            "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/34/icon?size=32\" alt=\"Tritanium\"\u003E",
+            "material_eve_type__name": "Tritanium",
+            "material_eve_type_id": 34,
+            "material_eve_type__group__id": 18,
+            "quantity": 405000
+          },
+          {
+            "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/35/icon?size=32\" alt=\"Pyerite\"\u003E",
+            "material_eve_type__name": "Pyerite",
+            "material_eve_type_id": 35,
+            "material_eve_type__group__id": 18,
+            "quantity": 135000
+          },
+          {
+            "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/36/icon?size=32\" alt=\"Mexallon\"\u003E",
+            "material_eve_type__name": "Mexallon",
+            "material_eve_type_id": 36,
+            "material_eve_type__group__id": 18,
+            "quantity": 27000
+          },
+          {
+            "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/37/icon?size=32\" alt=\"Isogen\"\u003E",
+            "material_eve_type__name": "Isogen",
+            "material_eve_type_id": 37,
+            "material_eve_type__group__id": 18,
+            "quantity": 7500
+          },
+          {
+            "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/38/icon?size=32\" alt=\"Nocxium\"\u003E",
+            "material_eve_type__name": "Nocxium",
+            "material_eve_type_id": 38,
+            "material_eve_type__group__id": 18,
+            "quantity": 1125
+          },
+          {
+            "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/39/icon?size=32\" alt=\"Zydrine\"\u003E",
+            "material_eve_type__name": "Zydrine",
+            "material_eve_type_id": 39,
+            "material_eve_type__group__id": 18,
+            "quantity": 263
+          },
+          {
+            "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/40/icon?size=32\" alt=\"Megacyte\"\u003E",
+            "material_eve_type__name": "Megacyte",
+            "material_eve_type_id": 40,
+            "material_eve_type__group__id": 18,
+            "quantity": 105
+          }
+        ]
+      },
+      {
+        "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/3828/icon?size=32\" alt=\"Construction Blocks\"\u003E",
+        "material_eve_type__name": "Construction Blocks",
+        "material_eve_type_id": 3828,
+        "material_eve_type__group__id": 1034,
+        "quantity": 75,
+        "submaterial": []
+      },
+      {
+        "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/11399/icon?size=32\" alt=\"Morphite\"\u003E",
+        "material_eve_type__name": "Morphite",
+        "material_eve_type_id": 11399,
+        "material_eve_type__group__id": 18,
+        "quantity": 150,
+        "submaterial": []
+      },
+      {
+        "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/11478/icon?size=32\" alt=\"R.A.M.- Starship Tech\"\u003E",
+        "material_eve_type__name": "R.A.M.- Starship Tech",
+        "material_eve_type_id": 11478,
+        "material_eve_type__group__id": 332,
+        "quantity": 18,
+        "submaterial": [
+          {
+            "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/34/icon?size=32\" alt=\"Tritanium\"\u003E",
+            "material_eve_type__name": "Tritanium",
+            "material_eve_type_id": 34,
+            "material_eve_type__group__id": 18,
+            "quantity": 556
+          },
+          {
+            "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/35/icon?size=32\" alt=\"Pyerite\"\u003E",
+            "material_eve_type__name": "Pyerite",
+            "material_eve_type_id": 35,
+            "material_eve_type__group__id": 18,
+            "quantity": 444
+          },
+          {
+            "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/36/icon?size=32\" alt=\"Mexallon\"\u003E",
+            "material_eve_type__name": "Mexallon",
+            "material_eve_type_id": 36,
+            "material_eve_type__group__id": 18,
+            "quantity": 222
+          },
+          {
+            "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/37/icon?size=32\" alt=\"Isogen\"\u003E",
+            "material_eve_type__name": "Isogen",
+            "material_eve_type_id": 37,
+            "material_eve_type__group__id": 18,
+            "quantity": 82
+          },
+          {
+            "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/38/icon?size=32\" alt=\"Nocxium\"\u003E",
+            "material_eve_type__name": "Nocxium",
+            "material_eve_type_id": 38,
+            "material_eve_type__group__id": 18,
+            "quantity": 36
+          }
+        ]
+      },
+      {
+        "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/11531/icon?size=32\" alt=\"Ion Thruster\"\u003E",
+        "material_eve_type__name": "Ion Thruster",
+        "material_eve_type_id": 11531,
+        "material_eve_type__group__id": 334,
+        "quantity": 57,
+        "submaterial": [
+          {
+            "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16670/icon?size=32\" alt=\"Crystalline Carbonide\"\u003E",
+            "material_eve_type__name": "Crystalline Carbonide",
+            "material_eve_type_id": 16670,
+            "material_eve_type__group__id": 429,
+            "quantity": 741,
+            "submaterials-16670": [
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4247/icon?size=32\" alt=\"Helium Fuel Block\"\u003E",
+                "material_eve_type__name": "Helium Fuel Block",
+                "material_eve_type_id": 4247,
+                "material_eve_type__group__id": 1136,
+                "quantity": 5
+              },
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16655/icon?size=32\" alt=\"Crystallite Alloy\"\u003E",
+                "material_eve_type__name": "Crystallite Alloy",
+                "material_eve_type_id": 16655,
+                "material_eve_type__group__id": 428,
+                "quantity": 100,
+                "submaterials-16655": [
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4247/icon?size=32\" alt=\"Helium Fuel Block\"\u003E",
+                    "material_eve_type__name": "Helium Fuel Block",
+                    "material_eve_type_id": 4247,
+                    "material_eve_type__group__id": 1136,
+                    "quantity": 5
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16640/icon?size=32\" alt=\"Cobalt\"\u003E",
+                    "material_eve_type__name": "Cobalt",
+                    "material_eve_type_id": 16640,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16643/icon?size=32\" alt=\"Cadmium\"\u003E",
+                    "material_eve_type__name": "Cadmium",
+                    "material_eve_type_id": 16643,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  }
+                ]
+              },
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16659/icon?size=32\" alt=\"Carbon Polymers\"\u003E",
+                "material_eve_type__name": "Carbon Polymers",
+                "material_eve_type_id": 16659,
+                "material_eve_type__group__id": 428,
+                "quantity": 100,
+                "submaterials-16659": [
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4247/icon?size=32\" alt=\"Helium Fuel Block\"\u003E",
+                    "material_eve_type__name": "Helium Fuel Block",
+                    "material_eve_type_id": 4247,
+                    "material_eve_type__group__id": 1136,
+                    "quantity": 5
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16633/icon?size=32\" alt=\"Hydrocarbons\"\u003E",
+                    "material_eve_type__name": "Hydrocarbons",
+                    "material_eve_type_id": 16633,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16636/icon?size=32\" alt=\"Silicates\"\u003E",
+                    "material_eve_type__name": "Silicates",
+                    "material_eve_type_id": 16636,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16680/icon?size=32\" alt=\"Phenolic Composites\"\u003E",
+            "material_eve_type__name": "Phenolic Composites",
+            "material_eve_type_id": 16680,
+            "material_eve_type__group__id": 429,
+            "quantity": 171,
+            "submaterials-16680": [
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4312/icon?size=32\" alt=\"Oxygen Fuel Block\"\u003E",
+                "material_eve_type__name": "Oxygen Fuel Block",
+                "material_eve_type_id": 4312,
+                "material_eve_type__group__id": 1136,
+                "quantity": 5
+              },
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16658/icon?size=32\" alt=\"Silicon Diborite\"\u003E",
+                "material_eve_type__name": "Silicon Diborite",
+                "material_eve_type_id": 16658,
+                "material_eve_type__group__id": 428,
+                "quantity": 100,
+                "submaterials-16658": [
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4312/icon?size=32\" alt=\"Oxygen Fuel Block\"\u003E",
+                    "material_eve_type__name": "Oxygen Fuel Block",
+                    "material_eve_type_id": 4312,
+                    "material_eve_type__group__id": 1136,
+                    "quantity": 5
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16635/icon?size=32\" alt=\"Evaporite Deposits\"\u003E",
+                    "material_eve_type__name": "Evaporite Deposits",
+                    "material_eve_type_id": 16635,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16636/icon?size=32\" alt=\"Silicates\"\u003E",
+                    "material_eve_type__name": "Silicates",
+                    "material_eve_type_id": 16636,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  }
+                ]
+              },
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16663/icon?size=32\" alt=\"Caesarium Cadmide\"\u003E",
+                "material_eve_type__name": "Caesarium Cadmide",
+                "material_eve_type_id": 16663,
+                "material_eve_type__group__id": 428,
+                "quantity": 100,
+                "submaterials-16663": [
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4312/icon?size=32\" alt=\"Oxygen Fuel Block\"\u003E",
+                    "material_eve_type__name": "Oxygen Fuel Block",
+                    "material_eve_type_id": 4312,
+                    "material_eve_type__group__id": 1136,
+                    "quantity": 5
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16643/icon?size=32\" alt=\"Cadmium\"\u003E",
+                    "material_eve_type__name": "Cadmium",
+                    "material_eve_type_id": 16643,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16647/icon?size=32\" alt=\"Caesium\"\u003E",
+                    "material_eve_type__name": "Caesium",
+                    "material_eve_type_id": 16647,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  }
+                ]
+              },
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/17959/icon?size=32\" alt=\"Vanadium Hafnite\"\u003E",
+                "material_eve_type__name": "Vanadium Hafnite",
+                "material_eve_type_id": 17959,
+                "material_eve_type__group__id": 428,
+                "quantity": 100,
+                "submaterials-17959": [
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4246/icon?size=32\" alt=\"Hydrogen Fuel Block\"\u003E",
+                    "material_eve_type__name": "Hydrogen Fuel Block",
+                    "material_eve_type_id": 4246,
+                    "material_eve_type__group__id": 1136,
+                    "quantity": 5
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16642/icon?size=32\" alt=\"Vanadium\"\u003E",
+                    "material_eve_type__name": "Vanadium",
+                    "material_eve_type_id": 16642,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16648/icon?size=32\" alt=\"Hafnium\"\u003E",
+                    "material_eve_type__name": "Hafnium",
+                    "material_eve_type_id": 16648,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16683/icon?size=32\" alt=\"Ferrogel\"\u003E",
+            "material_eve_type__name": "Ferrogel",
+            "material_eve_type_id": 16683,
+            "material_eve_type__group__id": 429,
+            "quantity": 57,
+            "submaterials-16683": [
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4246/icon?size=32\" alt=\"Hydrogen Fuel Block\"\u003E",
+                "material_eve_type__name": "Hydrogen Fuel Block",
+                "material_eve_type_id": 4246,
+                "material_eve_type__group__id": 1136,
+                "quantity": 5
+              },
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16665/icon?size=32\" alt=\"Hexite\"\u003E",
+                "material_eve_type__name": "Hexite",
+                "material_eve_type_id": 16665,
+                "material_eve_type__group__id": 428,
+                "quantity": 100,
+                "submaterials-16665": [
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4051/icon?size=32\" alt=\"Nitrogen Fuel Block\"\u003E",
+                    "material_eve_type__name": "Nitrogen Fuel Block",
+                    "material_eve_type_id": 4051,
+                    "material_eve_type__group__id": 1136,
+                    "quantity": 5
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16641/icon?size=32\" alt=\"Chromium\"\u003E",
+                    "material_eve_type__name": "Chromium",
+                    "material_eve_type_id": 16641,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16644/icon?size=32\" alt=\"Platinum\"\u003E",
+                    "material_eve_type__name": "Platinum",
+                    "material_eve_type_id": 16644,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  }
+                ]
+              },
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16666/icon?size=32\" alt=\"Hyperflurite\"\u003E",
+                "material_eve_type__name": "Hyperflurite",
+                "material_eve_type_id": 16666,
+                "material_eve_type__group__id": 428,
+                "quantity": 100,
+                "submaterials-16666": [
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4051/icon?size=32\" alt=\"Nitrogen Fuel Block\"\u003E",
+                    "material_eve_type__name": "Nitrogen Fuel Block",
+                    "material_eve_type_id": 4051,
+                    "material_eve_type__group__id": 1136,
+                    "quantity": 5
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16642/icon?size=32\" alt=\"Vanadium\"\u003E",
+                    "material_eve_type__name": "Vanadium",
+                    "material_eve_type_id": 16642,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16652/icon?size=32\" alt=\"Promethium\"\u003E",
+                    "material_eve_type__name": "Promethium",
+                    "material_eve_type_id": 16652,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  }
+                ]
+              },
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16669/icon?size=32\" alt=\"Ferrofluid\"\u003E",
+                "material_eve_type__name": "Ferrofluid",
+                "material_eve_type_id": 16669,
+                "material_eve_type__group__id": 428,
+                "quantity": 100,
+                "submaterials-16669": [
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4246/icon?size=32\" alt=\"Hydrogen Fuel Block\"\u003E",
+                    "material_eve_type__name": "Hydrogen Fuel Block",
+                    "material_eve_type_id": 4246,
+                    "material_eve_type__group__id": 1136,
+                    "quantity": 5
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16648/icon?size=32\" alt=\"Hafnium\"\u003E",
+                    "material_eve_type__name": "Hafnium",
+                    "material_eve_type_id": 16648,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16650/icon?size=32\" alt=\"Dysprosium\"\u003E",
+                    "material_eve_type__name": "Dysprosium",
+                    "material_eve_type_id": 16650,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  }
+                ]
+              },
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/17960/icon?size=32\" alt=\"Prometium\"\u003E",
+                "material_eve_type__name": "Prometium",
+                "material_eve_type_id": 17960,
+                "material_eve_type__group__id": 428,
+                "quantity": 100,
+                "submaterials-17960": [
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4312/icon?size=32\" alt=\"Oxygen Fuel Block\"\u003E",
+                    "material_eve_type__name": "Oxygen Fuel Block",
+                    "material_eve_type_id": 4312,
+                    "material_eve_type__group__id": 1136,
+                    "quantity": 5
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16643/icon?size=32\" alt=\"Cadmium\"\u003E",
+                    "material_eve_type__name": "Cadmium",
+                    "material_eve_type_id": 16643,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16652/icon?size=32\" alt=\"Promethium\"\u003E",
+                    "material_eve_type__name": "Promethium",
+                    "material_eve_type_id": 16652,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/11535/icon?size=32\" alt=\"Magnetometric Sensor Cluster\"\u003E",
+        "material_eve_type__name": "Magnetometric Sensor Cluster",
+        "material_eve_type_id": 11535,
+        "material_eve_type__group__id": 334,
+        "quantity": 495,
+        "submaterial": [
+          {
+            "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16670/icon?size=32\" alt=\"Crystalline Carbonide\"\u003E",
+            "material_eve_type__name": "Crystalline Carbonide",
+            "material_eve_type_id": 16670,
+            "material_eve_type__group__id": 429,
+            "quantity": 10890,
+            "submaterials-16670": [
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4247/icon?size=32\" alt=\"Helium Fuel Block\"\u003E",
+                "material_eve_type__name": "Helium Fuel Block",
+                "material_eve_type_id": 4247,
+                "material_eve_type__group__id": 1136,
+                "quantity": 5
+              },
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16655/icon?size=32\" alt=\"Crystallite Alloy\"\u003E",
+                "material_eve_type__name": "Crystallite Alloy",
+                "material_eve_type_id": 16655,
+                "material_eve_type__group__id": 428,
+                "quantity": 100,
+                "submaterials-16655": [
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4247/icon?size=32\" alt=\"Helium Fuel Block\"\u003E",
+                    "material_eve_type__name": "Helium Fuel Block",
+                    "material_eve_type_id": 4247,
+                    "material_eve_type__group__id": 1136,
+                    "quantity": 5
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16640/icon?size=32\" alt=\"Cobalt\"\u003E",
+                    "material_eve_type__name": "Cobalt",
+                    "material_eve_type_id": 16640,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16643/icon?size=32\" alt=\"Cadmium\"\u003E",
+                    "material_eve_type__name": "Cadmium",
+                    "material_eve_type_id": 16643,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  }
+                ]
+              },
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16659/icon?size=32\" alt=\"Carbon Polymers\"\u003E",
+                "material_eve_type__name": "Carbon Polymers",
+                "material_eve_type_id": 16659,
+                "material_eve_type__group__id": 428,
+                "quantity": 100,
+                "submaterials-16659": [
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4247/icon?size=32\" alt=\"Helium Fuel Block\"\u003E",
+                    "material_eve_type__name": "Helium Fuel Block",
+                    "material_eve_type_id": 4247,
+                    "material_eve_type__group__id": 1136,
+                    "quantity": 5
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16633/icon?size=32\" alt=\"Hydrocarbons\"\u003E",
+                    "material_eve_type__name": "Hydrocarbons",
+                    "material_eve_type_id": 16633,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16636/icon?size=32\" alt=\"Silicates\"\u003E",
+                    "material_eve_type__name": "Silicates",
+                    "material_eve_type_id": 16636,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16681/icon?size=32\" alt=\"Nanotransistors\"\u003E",
+            "material_eve_type__name": "Nanotransistors",
+            "material_eve_type_id": 16681,
+            "material_eve_type__group__id": 429,
+            "quantity": 495,
+            "submaterials-16681": [
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4051/icon?size=32\" alt=\"Nitrogen Fuel Block\"\u003E",
+                "material_eve_type__name": "Nitrogen Fuel Block",
+                "material_eve_type_id": 4051,
+                "material_eve_type__group__id": 1136,
+                "quantity": 5
+              },
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16661/icon?size=32\" alt=\"Sulfuric Acid\"\u003E",
+                "material_eve_type__name": "Sulfuric Acid",
+                "material_eve_type_id": 16661,
+                "material_eve_type__group__id": 428,
+                "quantity": 100,
+                "submaterials-16661": [
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4051/icon?size=32\" alt=\"Nitrogen Fuel Block\"\u003E",
+                    "material_eve_type__name": "Nitrogen Fuel Block",
+                    "material_eve_type_id": 4051,
+                    "material_eve_type__group__id": 1136,
+                    "quantity": 5
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16634/icon?size=32\" alt=\"Atmospheric Gases\"\u003E",
+                    "material_eve_type__name": "Atmospheric Gases",
+                    "material_eve_type_id": 16634,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16635/icon?size=32\" alt=\"Evaporite Deposits\"\u003E",
+                    "material_eve_type__name": "Evaporite Deposits",
+                    "material_eve_type_id": 16635,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  }
+                ]
+              },
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16662/icon?size=32\" alt=\"Platinum Technite\"\u003E",
+                "material_eve_type__name": "Platinum Technite",
+                "material_eve_type_id": 16662,
+                "material_eve_type__group__id": 428,
+                "quantity": 100,
+                "submaterials-16662": [
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4051/icon?size=32\" alt=\"Nitrogen Fuel Block\"\u003E",
+                    "material_eve_type__name": "Nitrogen Fuel Block",
+                    "material_eve_type_id": 4051,
+                    "material_eve_type__group__id": 1136,
+                    "quantity": 5
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16644/icon?size=32\" alt=\"Platinum\"\u003E",
+                    "material_eve_type__name": "Platinum",
+                    "material_eve_type_id": 16644,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16649/icon?size=32\" alt=\"Technetium\"\u003E",
+                    "material_eve_type__name": "Technetium",
+                    "material_eve_type_id": 16649,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  }
+                ]
+              },
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16667/icon?size=32\" alt=\"Neo Mercurite\"\u003E",
+                "material_eve_type__name": "Neo Mercurite",
+                "material_eve_type_id": 16667,
+                "material_eve_type__group__id": 428,
+                "quantity": 100,
+                "submaterials-16667": [
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4247/icon?size=32\" alt=\"Helium Fuel Block\"\u003E",
+                    "material_eve_type__name": "Helium Fuel Block",
+                    "material_eve_type_id": 4247,
+                    "material_eve_type__group__id": 1136,
+                    "quantity": 5
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16646/icon?size=32\" alt=\"Mercury\"\u003E",
+                    "material_eve_type__name": "Mercury",
+                    "material_eve_type_id": 16646,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16651/icon?size=32\" alt=\"Neodymium\"\u003E",
+                    "material_eve_type__name": "Neodymium",
+                    "material_eve_type_id": 16651,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16682/icon?size=32\" alt=\"Hypersynaptic Fibers\"\u003E",
+            "material_eve_type__name": "Hypersynaptic Fibers",
+            "material_eve_type_id": 16682,
+            "material_eve_type__group__id": 429,
+            "quantity": 990,
+            "submaterials-16682": [
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4312/icon?size=32\" alt=\"Oxygen Fuel Block\"\u003E",
+                "material_eve_type__name": "Oxygen Fuel Block",
+                "material_eve_type_id": 4312,
+                "material_eve_type__group__id": 1136,
+                "quantity": 5
+              },
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16664/icon?size=32\" alt=\"Solerium\"\u003E",
+                "material_eve_type__name": "Solerium",
+                "material_eve_type_id": 16664,
+                "material_eve_type__group__id": 428,
+                "quantity": 100,
+                "submaterials-16664": [
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4312/icon?size=32\" alt=\"Oxygen Fuel Block\"\u003E",
+                    "material_eve_type__name": "Oxygen Fuel Block",
+                    "material_eve_type_id": 4312,
+                    "material_eve_type__group__id": 1136,
+                    "quantity": 5
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16641/icon?size=32\" alt=\"Chromium\"\u003E",
+                    "material_eve_type__name": "Chromium",
+                    "material_eve_type_id": 16641,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16647/icon?size=32\" alt=\"Caesium\"\u003E",
+                    "material_eve_type__name": "Caesium",
+                    "material_eve_type_id": 16647,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  }
+                ]
+              },
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16668/icon?size=32\" alt=\"Dysporite\"\u003E",
+                "material_eve_type__name": "Dysporite",
+                "material_eve_type_id": 16668,
+                "material_eve_type__group__id": 428,
+                "quantity": 100,
+                "submaterials-16668": [
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4247/icon?size=32\" alt=\"Helium Fuel Block\"\u003E",
+                    "material_eve_type__name": "Helium Fuel Block",
+                    "material_eve_type_id": 4247,
+                    "material_eve_type__group__id": 1136,
+                    "quantity": 5
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16646/icon?size=32\" alt=\"Mercury\"\u003E",
+                    "material_eve_type__name": "Mercury",
+                    "material_eve_type_id": 16646,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16650/icon?size=32\" alt=\"Dysprosium\"\u003E",
+                    "material_eve_type__name": "Dysprosium",
+                    "material_eve_type_id": 16650,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  }
+                ]
+              },
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/17959/icon?size=32\" alt=\"Vanadium Hafnite\"\u003E",
+                "material_eve_type__name": "Vanadium Hafnite",
+                "material_eve_type_id": 17959,
+                "material_eve_type__group__id": 428,
+                "quantity": 100,
+                "submaterials-17959": [
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4246/icon?size=32\" alt=\"Hydrogen Fuel Block\"\u003E",
+                    "material_eve_type__name": "Hydrogen Fuel Block",
+                    "material_eve_type_id": 4246,
+                    "material_eve_type__group__id": 1136,
+                    "quantity": 5
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16642/icon?size=32\" alt=\"Vanadium\"\u003E",
+                    "material_eve_type__name": "Vanadium",
+                    "material_eve_type_id": 16642,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16648/icon?size=32\" alt=\"Hafnium\"\u003E",
+                    "material_eve_type__name": "Hafnium",
+                    "material_eve_type_id": 16648,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/11541/icon?size=32\" alt=\"Photon Microprocessor\"\u003E",
+        "material_eve_type__name": "Photon Microprocessor",
+        "material_eve_type_id": 11541,
+        "material_eve_type__group__id": 334,
+        "quantity": 1800,
+        "submaterial": [
+          {
+            "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16670/icon?size=32\" alt=\"Crystalline Carbonide\"\u003E",
+            "material_eve_type__name": "Crystalline Carbonide",
+            "material_eve_type_id": 16670,
+            "material_eve_type__group__id": 429,
+            "quantity": 30600,
+            "submaterials-16670": [
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4247/icon?size=32\" alt=\"Helium Fuel Block\"\u003E",
+                "material_eve_type__name": "Helium Fuel Block",
+                "material_eve_type_id": 4247,
+                "material_eve_type__group__id": 1136,
+                "quantity": 5
+              },
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16655/icon?size=32\" alt=\"Crystallite Alloy\"\u003E",
+                "material_eve_type__name": "Crystallite Alloy",
+                "material_eve_type_id": 16655,
+                "material_eve_type__group__id": 428,
+                "quantity": 100,
+                "submaterials-16655": [
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4247/icon?size=32\" alt=\"Helium Fuel Block\"\u003E",
+                    "material_eve_type__name": "Helium Fuel Block",
+                    "material_eve_type_id": 4247,
+                    "material_eve_type__group__id": 1136,
+                    "quantity": 5
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16640/icon?size=32\" alt=\"Cobalt\"\u003E",
+                    "material_eve_type__name": "Cobalt",
+                    "material_eve_type_id": 16640,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16643/icon?size=32\" alt=\"Cadmium\"\u003E",
+                    "material_eve_type__name": "Cadmium",
+                    "material_eve_type_id": 16643,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  }
+                ]
+              },
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16659/icon?size=32\" alt=\"Carbon Polymers\"\u003E",
+                "material_eve_type__name": "Carbon Polymers",
+                "material_eve_type_id": 16659,
+                "material_eve_type__group__id": 428,
+                "quantity": 100,
+                "submaterials-16659": [
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4247/icon?size=32\" alt=\"Helium Fuel Block\"\u003E",
+                    "material_eve_type__name": "Helium Fuel Block",
+                    "material_eve_type_id": 4247,
+                    "material_eve_type__group__id": 1136,
+                    "quantity": 5
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16633/icon?size=32\" alt=\"Hydrocarbons\"\u003E",
+                    "material_eve_type__name": "Hydrocarbons",
+                    "material_eve_type_id": 16633,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16636/icon?size=32\" alt=\"Silicates\"\u003E",
+                    "material_eve_type__name": "Silicates",
+                    "material_eve_type_id": 16636,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16680/icon?size=32\" alt=\"Phenolic Composites\"\u003E",
+            "material_eve_type__name": "Phenolic Composites",
+            "material_eve_type_id": 16680,
+            "material_eve_type__group__id": 429,
+            "quantity": 10800,
+            "submaterials-16680": [
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4312/icon?size=32\" alt=\"Oxygen Fuel Block\"\u003E",
+                "material_eve_type__name": "Oxygen Fuel Block",
+                "material_eve_type_id": 4312,
+                "material_eve_type__group__id": 1136,
+                "quantity": 5
+              },
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16658/icon?size=32\" alt=\"Silicon Diborite\"\u003E",
+                "material_eve_type__name": "Silicon Diborite",
+                "material_eve_type_id": 16658,
+                "material_eve_type__group__id": 428,
+                "quantity": 100,
+                "submaterials-16658": [
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4312/icon?size=32\" alt=\"Oxygen Fuel Block\"\u003E",
+                    "material_eve_type__name": "Oxygen Fuel Block",
+                    "material_eve_type_id": 4312,
+                    "material_eve_type__group__id": 1136,
+                    "quantity": 5
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16635/icon?size=32\" alt=\"Evaporite Deposits\"\u003E",
+                    "material_eve_type__name": "Evaporite Deposits",
+                    "material_eve_type_id": 16635,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16636/icon?size=32\" alt=\"Silicates\"\u003E",
+                    "material_eve_type__name": "Silicates",
+                    "material_eve_type_id": 16636,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  }
+                ]
+              },
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16663/icon?size=32\" alt=\"Caesarium Cadmide\"\u003E",
+                "material_eve_type__name": "Caesarium Cadmide",
+                "material_eve_type_id": 16663,
+                "material_eve_type__group__id": 428,
+                "quantity": 100,
+                "submaterials-16663": [
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4312/icon?size=32\" alt=\"Oxygen Fuel Block\"\u003E",
+                    "material_eve_type__name": "Oxygen Fuel Block",
+                    "material_eve_type_id": 4312,
+                    "material_eve_type__group__id": 1136,
+                    "quantity": 5
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16643/icon?size=32\" alt=\"Cadmium\"\u003E",
+                    "material_eve_type__name": "Cadmium",
+                    "material_eve_type_id": 16643,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16647/icon?size=32\" alt=\"Caesium\"\u003E",
+                    "material_eve_type__name": "Caesium",
+                    "material_eve_type_id": 16647,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  }
+                ]
+              },
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/17959/icon?size=32\" alt=\"Vanadium Hafnite\"\u003E",
+                "material_eve_type__name": "Vanadium Hafnite",
+                "material_eve_type_id": 17959,
+                "material_eve_type__group__id": 428,
+                "quantity": 100,
+                "submaterials-17959": [
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4246/icon?size=32\" alt=\"Hydrogen Fuel Block\"\u003E",
+                    "material_eve_type__name": "Hydrogen Fuel Block",
+                    "material_eve_type_id": 4246,
+                    "material_eve_type__group__id": 1136,
+                    "quantity": 5
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16642/icon?size=32\" alt=\"Vanadium\"\u003E",
+                    "material_eve_type__name": "Vanadium",
+                    "material_eve_type_id": 16642,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16648/icon?size=32\" alt=\"Hafnium\"\u003E",
+                    "material_eve_type__name": "Hafnium",
+                    "material_eve_type_id": 16648,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16681/icon?size=32\" alt=\"Nanotransistors\"\u003E",
+            "material_eve_type__name": "Nanotransistors",
+            "material_eve_type_id": 16681,
+            "material_eve_type__group__id": 429,
+            "quantity": 3600,
+            "submaterials-16681": [
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4051/icon?size=32\" alt=\"Nitrogen Fuel Block\"\u003E",
+                "material_eve_type__name": "Nitrogen Fuel Block",
+                "material_eve_type_id": 4051,
+                "material_eve_type__group__id": 1136,
+                "quantity": 5
+              },
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16661/icon?size=32\" alt=\"Sulfuric Acid\"\u003E",
+                "material_eve_type__name": "Sulfuric Acid",
+                "material_eve_type_id": 16661,
+                "material_eve_type__group__id": 428,
+                "quantity": 100,
+                "submaterials-16661": [
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4051/icon?size=32\" alt=\"Nitrogen Fuel Block\"\u003E",
+                    "material_eve_type__name": "Nitrogen Fuel Block",
+                    "material_eve_type_id": 4051,
+                    "material_eve_type__group__id": 1136,
+                    "quantity": 5
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16634/icon?size=32\" alt=\"Atmospheric Gases\"\u003E",
+                    "material_eve_type__name": "Atmospheric Gases",
+                    "material_eve_type_id": 16634,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16635/icon?size=32\" alt=\"Evaporite Deposits\"\u003E",
+                    "material_eve_type__name": "Evaporite Deposits",
+                    "material_eve_type_id": 16635,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  }
+                ]
+              },
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16662/icon?size=32\" alt=\"Platinum Technite\"\u003E",
+                "material_eve_type__name": "Platinum Technite",
+                "material_eve_type_id": 16662,
+                "material_eve_type__group__id": 428,
+                "quantity": 100,
+                "submaterials-16662": [
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4051/icon?size=32\" alt=\"Nitrogen Fuel Block\"\u003E",
+                    "material_eve_type__name": "Nitrogen Fuel Block",
+                    "material_eve_type_id": 4051,
+                    "material_eve_type__group__id": 1136,
+                    "quantity": 5
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16644/icon?size=32\" alt=\"Platinum\"\u003E",
+                    "material_eve_type__name": "Platinum",
+                    "material_eve_type_id": 16644,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16649/icon?size=32\" alt=\"Technetium\"\u003E",
+                    "material_eve_type__name": "Technetium",
+                    "material_eve_type_id": 16649,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  }
+                ]
+              },
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16667/icon?size=32\" alt=\"Neo Mercurite\"\u003E",
+                "material_eve_type__name": "Neo Mercurite",
+                "material_eve_type_id": 16667,
+                "material_eve_type__group__id": 428,
+                "quantity": 100,
+                "submaterials-16667": [
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4247/icon?size=32\" alt=\"Helium Fuel Block\"\u003E",
+                    "material_eve_type__name": "Helium Fuel Block",
+                    "material_eve_type_id": 4247,
+                    "material_eve_type__group__id": 1136,
+                    "quantity": 5
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16646/icon?size=32\" alt=\"Mercury\"\u003E",
+                    "material_eve_type__name": "Mercury",
+                    "material_eve_type_id": 16646,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16651/icon?size=32\" alt=\"Neodymium\"\u003E",
+                    "material_eve_type__name": "Neodymium",
+                    "material_eve_type_id": 16651,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/33359/icon?size=32\" alt=\"Photonic Metamaterials\"\u003E",
+            "material_eve_type__name": "Photonic Metamaterials",
+            "material_eve_type_id": 33359,
+            "material_eve_type__group__id": 429,
+            "quantity": 3600,
+            "submaterials-33359": [
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4312/icon?size=32\" alt=\"Oxygen Fuel Block\"\u003E",
+                "material_eve_type__name": "Oxygen Fuel Block",
+                "material_eve_type_id": 4312,
+                "material_eve_type__group__id": 1136,
+                "quantity": 5
+              },
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16655/icon?size=32\" alt=\"Crystallite Alloy\"\u003E",
+                "material_eve_type__name": "Crystallite Alloy",
+                "material_eve_type_id": 16655,
+                "material_eve_type__group__id": 428,
+                "quantity": 100,
+                "submaterials-16655": [
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4247/icon?size=32\" alt=\"Helium Fuel Block\"\u003E",
+                    "material_eve_type__name": "Helium Fuel Block",
+                    "material_eve_type_id": 4247,
+                    "material_eve_type__group__id": 1136,
+                    "quantity": 5
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16640/icon?size=32\" alt=\"Cobalt\"\u003E",
+                    "material_eve_type__name": "Cobalt",
+                    "material_eve_type_id": 16640,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16643/icon?size=32\" alt=\"Cadmium\"\u003E",
+                    "material_eve_type__name": "Cadmium",
+                    "material_eve_type_id": 16643,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  }
+                ]
+              },
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/33336/icon?size=32\" alt=\"Thulium Hafnite\"\u003E",
+                "material_eve_type__name": "Thulium Hafnite",
+                "material_eve_type_id": 33336,
+                "material_eve_type__group__id": 428,
+                "quantity": 100,
+                "submaterials-33336": [
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4246/icon?size=32\" alt=\"Hydrogen Fuel Block\"\u003E",
+                    "material_eve_type__name": "Hydrogen Fuel Block",
+                    "material_eve_type_id": 4246,
+                    "material_eve_type__group__id": 1136,
+                    "quantity": 5
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16648/icon?size=32\" alt=\"Hafnium\"\u003E",
+                    "material_eve_type__name": "Hafnium",
+                    "material_eve_type_id": 16648,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16653/icon?size=32\" alt=\"Thulium\"\u003E",
+                    "material_eve_type__name": "Thulium",
+                    "material_eve_type_id": 16653,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/11545/icon?size=32\" alt=\"Crystalline Carbonide Armor Plate\"\u003E",
+        "material_eve_type__name": "Crystalline Carbonide Armor Plate",
+        "material_eve_type_id": 11545,
+        "material_eve_type__group__id": 334,
+        "quantity": 3750,
+        "submaterial": [
+          {
+            "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16670/icon?size=32\" alt=\"Crystalline Carbonide\"\u003E",
+            "material_eve_type__name": "Crystalline Carbonide",
+            "material_eve_type_id": 16670,
+            "material_eve_type__group__id": 429,
+            "quantity": 165000,
+            "submaterials-16670": [
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4247/icon?size=32\" alt=\"Helium Fuel Block\"\u003E",
+                "material_eve_type__name": "Helium Fuel Block",
+                "material_eve_type_id": 4247,
+                "material_eve_type__group__id": 1136,
+                "quantity": 5
+              },
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16655/icon?size=32\" alt=\"Crystallite Alloy\"\u003E",
+                "material_eve_type__name": "Crystallite Alloy",
+                "material_eve_type_id": 16655,
+                "material_eve_type__group__id": 428,
+                "quantity": 100,
+                "submaterials-16655": [
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4247/icon?size=32\" alt=\"Helium Fuel Block\"\u003E",
+                    "material_eve_type__name": "Helium Fuel Block",
+                    "material_eve_type_id": 4247,
+                    "material_eve_type__group__id": 1136,
+                    "quantity": 5
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16640/icon?size=32\" alt=\"Cobalt\"\u003E",
+                    "material_eve_type__name": "Cobalt",
+                    "material_eve_type_id": 16640,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16643/icon?size=32\" alt=\"Cadmium\"\u003E",
+                    "material_eve_type__name": "Cadmium",
+                    "material_eve_type_id": 16643,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  }
+                ]
+              },
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16659/icon?size=32\" alt=\"Carbon Polymers\"\u003E",
+                "material_eve_type__name": "Carbon Polymers",
+                "material_eve_type_id": 16659,
+                "material_eve_type__group__id": 428,
+                "quantity": 100,
+                "submaterials-16659": [
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4247/icon?size=32\" alt=\"Helium Fuel Block\"\u003E",
+                    "material_eve_type__name": "Helium Fuel Block",
+                    "material_eve_type_id": 4247,
+                    "material_eve_type__group__id": 1136,
+                    "quantity": 5
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16633/icon?size=32\" alt=\"Hydrocarbons\"\u003E",
+                    "material_eve_type__name": "Hydrocarbons",
+                    "material_eve_type_id": 16633,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16636/icon?size=32\" alt=\"Silicates\"\u003E",
+                    "material_eve_type__name": "Silicates",
+                    "material_eve_type_id": 16636,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16678/icon?size=32\" alt=\"Sylramic Fibers\"\u003E",
+            "material_eve_type__name": "Sylramic Fibers",
+            "material_eve_type_id": 16678,
+            "material_eve_type__group__id": 429,
+            "quantity": 41250,
+            "submaterials-16678": [
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4247/icon?size=32\" alt=\"Helium Fuel Block\"\u003E",
+                "material_eve_type__name": "Helium Fuel Block",
+                "material_eve_type_id": 4247,
+                "material_eve_type__group__id": 1136,
+                "quantity": 5
+              },
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16660/icon?size=32\" alt=\"Ceramic Powder\"\u003E",
+                "material_eve_type__name": "Ceramic Powder",
+                "material_eve_type_id": 16660,
+                "material_eve_type__group__id": 428,
+                "quantity": 100,
+                "submaterials-16660": [
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4246/icon?size=32\" alt=\"Hydrogen Fuel Block\"\u003E",
+                    "material_eve_type__name": "Hydrogen Fuel Block",
+                    "material_eve_type_id": 4246,
+                    "material_eve_type__group__id": 1136,
+                    "quantity": 5
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16635/icon?size=32\" alt=\"Evaporite Deposits\"\u003E",
+                    "material_eve_type__name": "Evaporite Deposits",
+                    "material_eve_type_id": 16635,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16636/icon?size=32\" alt=\"Silicates\"\u003E",
+                    "material_eve_type__name": "Silicates",
+                    "material_eve_type_id": 16636,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  }
+                ]
+              },
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16665/icon?size=32\" alt=\"Hexite\"\u003E",
+                "material_eve_type__name": "Hexite",
+                "material_eve_type_id": 16665,
+                "material_eve_type__group__id": 428,
+                "quantity": 100,
+                "submaterials-16665": [
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4051/icon?size=32\" alt=\"Nitrogen Fuel Block\"\u003E",
+                    "material_eve_type__name": "Nitrogen Fuel Block",
+                    "material_eve_type_id": 4051,
+                    "material_eve_type__group__id": 1136,
+                    "quantity": 5
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16641/icon?size=32\" alt=\"Chromium\"\u003E",
+                    "material_eve_type__name": "Chromium",
+                    "material_eve_type_id": 16641,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16644/icon?size=32\" alt=\"Platinum\"\u003E",
+                    "material_eve_type__name": "Platinum",
+                    "material_eve_type_id": 16644,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/11547/icon?size=32\" alt=\"Fusion Reactor Unit\"\u003E",
+        "material_eve_type__name": "Fusion Reactor Unit",
+        "material_eve_type_id": 11547,
+        "material_eve_type__group__id": 334,
+        "quantity": 30,
+        "submaterial": [
+          {
+            "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16670/icon?size=32\" alt=\"Crystalline Carbonide\"\u003E",
+            "material_eve_type__name": "Crystalline Carbonide",
+            "material_eve_type_id": 16670,
+            "material_eve_type__group__id": 429,
+            "quantity": 270,
+            "submaterials-16670": [
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4247/icon?size=32\" alt=\"Helium Fuel Block\"\u003E",
+                "material_eve_type__name": "Helium Fuel Block",
+                "material_eve_type_id": 4247,
+                "material_eve_type__group__id": 1136,
+                "quantity": 5
+              },
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16655/icon?size=32\" alt=\"Crystallite Alloy\"\u003E",
+                "material_eve_type__name": "Crystallite Alloy",
+                "material_eve_type_id": 16655,
+                "material_eve_type__group__id": 428,
+                "quantity": 100,
+                "submaterials-16655": [
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4247/icon?size=32\" alt=\"Helium Fuel Block\"\u003E",
+                    "material_eve_type__name": "Helium Fuel Block",
+                    "material_eve_type_id": 4247,
+                    "material_eve_type__group__id": 1136,
+                    "quantity": 5
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16640/icon?size=32\" alt=\"Cobalt\"\u003E",
+                    "material_eve_type__name": "Cobalt",
+                    "material_eve_type_id": 16640,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16643/icon?size=32\" alt=\"Cadmium\"\u003E",
+                    "material_eve_type__name": "Cadmium",
+                    "material_eve_type_id": 16643,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  }
+                ]
+              },
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16659/icon?size=32\" alt=\"Carbon Polymers\"\u003E",
+                "material_eve_type__name": "Carbon Polymers",
+                "material_eve_type_id": 16659,
+                "material_eve_type__group__id": 428,
+                "quantity": 100,
+                "submaterials-16659": [
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4247/icon?size=32\" alt=\"Helium Fuel Block\"\u003E",
+                    "material_eve_type__name": "Helium Fuel Block",
+                    "material_eve_type_id": 4247,
+                    "material_eve_type__group__id": 1136,
+                    "quantity": 5
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16633/icon?size=32\" alt=\"Hydrocarbons\"\u003E",
+                    "material_eve_type__name": "Hydrocarbons",
+                    "material_eve_type_id": 16633,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16636/icon?size=32\" alt=\"Silicates\"\u003E",
+                    "material_eve_type__name": "Silicates",
+                    "material_eve_type_id": 16636,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/17317/icon?size=32\" alt=\"Fermionic Condensates\"\u003E",
+            "material_eve_type__name": "Fermionic Condensates",
+            "material_eve_type_id": 17317,
+            "material_eve_type__group__id": 429,
+            "quantity": 60,
+            "submaterials-17317": [
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4247/icon?size=32\" alt=\"Helium Fuel Block\"\u003E",
+                "material_eve_type__name": "Helium Fuel Block",
+                "material_eve_type_id": 4247,
+                "material_eve_type__group__id": 1136,
+                "quantity": 5
+              },
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16663/icon?size=32\" alt=\"Caesarium Cadmide\"\u003E",
+                "material_eve_type__name": "Caesarium Cadmide",
+                "material_eve_type_id": 16663,
+                "material_eve_type__group__id": 428,
+                "quantity": 100,
+                "submaterials-16663": [
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4312/icon?size=32\" alt=\"Oxygen Fuel Block\"\u003E",
+                    "material_eve_type__name": "Oxygen Fuel Block",
+                    "material_eve_type_id": 4312,
+                    "material_eve_type__group__id": 1136,
+                    "quantity": 5
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16643/icon?size=32\" alt=\"Cadmium\"\u003E",
+                    "material_eve_type__name": "Cadmium",
+                    "material_eve_type_id": 16643,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16647/icon?size=32\" alt=\"Caesium\"\u003E",
+                    "material_eve_type__name": "Caesium",
+                    "material_eve_type_id": 16647,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  }
+                ]
+              },
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16668/icon?size=32\" alt=\"Dysporite\"\u003E",
+                "material_eve_type__name": "Dysporite",
+                "material_eve_type_id": 16668,
+                "material_eve_type__group__id": 428,
+                "quantity": 100,
+                "submaterials-16668": [
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4247/icon?size=32\" alt=\"Helium Fuel Block\"\u003E",
+                    "material_eve_type__name": "Helium Fuel Block",
+                    "material_eve_type_id": 4247,
+                    "material_eve_type__group__id": 1136,
+                    "quantity": 5
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16646/icon?size=32\" alt=\"Mercury\"\u003E",
+                    "material_eve_type__name": "Mercury",
+                    "material_eve_type_id": 16646,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16650/icon?size=32\" alt=\"Dysprosium\"\u003E",
+                    "material_eve_type__name": "Dysprosium",
+                    "material_eve_type_id": 16650,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  }
+                ]
+              },
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/17769/icon?size=32\" alt=\"Fluxed Condensates\"\u003E",
+                "material_eve_type__name": "Fluxed Condensates",
+                "material_eve_type_id": 17769,
+                "material_eve_type__group__id": 428,
+                "quantity": 100,
+                "submaterials-17769": [
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4312/icon?size=32\" alt=\"Oxygen Fuel Block\"\u003E",
+                    "material_eve_type__name": "Oxygen Fuel Block",
+                    "material_eve_type_id": 4312,
+                    "material_eve_type__group__id": 1136,
+                    "quantity": 5
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16651/icon?size=32\" alt=\"Neodymium\"\u003E",
+                    "material_eve_type__name": "Neodymium",
+                    "material_eve_type_id": 16651,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16653/icon?size=32\" alt=\"Thulium\"\u003E",
+                    "material_eve_type__name": "Thulium",
+                    "material_eve_type_id": 16653,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  }
+                ]
+              },
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/17960/icon?size=32\" alt=\"Prometium\"\u003E",
+                "material_eve_type__name": "Prometium",
+                "material_eve_type_id": 17960,
+                "material_eve_type__group__id": 428,
+                "quantity": 100,
+                "submaterials-17960": [
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4312/icon?size=32\" alt=\"Oxygen Fuel Block\"\u003E",
+                    "material_eve_type__name": "Oxygen Fuel Block",
+                    "material_eve_type_id": 4312,
+                    "material_eve_type__group__id": 1136,
+                    "quantity": 5
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16643/icon?size=32\" alt=\"Cadmium\"\u003E",
+                    "material_eve_type__name": "Cadmium",
+                    "material_eve_type_id": 16643,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16652/icon?size=32\" alt=\"Promethium\"\u003E",
+                    "material_eve_type__name": "Promethium",
+                    "material_eve_type_id": 16652,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/11553/icon?size=32\" alt=\"Oscillator Capacitor Unit\"\u003E",
+        "material_eve_type__name": "Oscillator Capacitor Unit",
+        "material_eve_type_id": 11553,
+        "material_eve_type__group__id": 334,
+        "quantity": 375,
+        "submaterial": [
+          {
+            "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16670/icon?size=32\" alt=\"Crystalline Carbonide\"\u003E",
+            "material_eve_type__name": "Crystalline Carbonide",
+            "material_eve_type_id": 16670,
+            "material_eve_type__group__id": 429,
+            "quantity": 10125,
+            "submaterials-16670": [
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4247/icon?size=32\" alt=\"Helium Fuel Block\"\u003E",
+                "material_eve_type__name": "Helium Fuel Block",
+                "material_eve_type_id": 4247,
+                "material_eve_type__group__id": 1136,
+                "quantity": 5
+              },
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16655/icon?size=32\" alt=\"Crystallite Alloy\"\u003E",
+                "material_eve_type__name": "Crystallite Alloy",
+                "material_eve_type_id": 16655,
+                "material_eve_type__group__id": 428,
+                "quantity": 100,
+                "submaterials-16655": [
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4247/icon?size=32\" alt=\"Helium Fuel Block\"\u003E",
+                    "material_eve_type__name": "Helium Fuel Block",
+                    "material_eve_type_id": 4247,
+                    "material_eve_type__group__id": 1136,
+                    "quantity": 5
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16640/icon?size=32\" alt=\"Cobalt\"\u003E",
+                    "material_eve_type__name": "Cobalt",
+                    "material_eve_type_id": 16640,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16643/icon?size=32\" alt=\"Cadmium\"\u003E",
+                    "material_eve_type__name": "Cadmium",
+                    "material_eve_type_id": 16643,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  }
+                ]
+              },
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16659/icon?size=32\" alt=\"Carbon Polymers\"\u003E",
+                "material_eve_type__name": "Carbon Polymers",
+                "material_eve_type_id": 16659,
+                "material_eve_type__group__id": 428,
+                "quantity": 100,
+                "submaterials-16659": [
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4247/icon?size=32\" alt=\"Helium Fuel Block\"\u003E",
+                    "material_eve_type__name": "Helium Fuel Block",
+                    "material_eve_type_id": 4247,
+                    "material_eve_type__group__id": 1136,
+                    "quantity": 5
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16633/icon?size=32\" alt=\"Hydrocarbons\"\u003E",
+                    "material_eve_type__name": "Hydrocarbons",
+                    "material_eve_type_id": 16633,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16636/icon?size=32\" alt=\"Silicates\"\u003E",
+                    "material_eve_type__name": "Silicates",
+                    "material_eve_type_id": 16636,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16679/icon?size=32\" alt=\"Fullerides\"\u003E",
+            "material_eve_type__name": "Fullerides",
+            "material_eve_type_id": 16679,
+            "material_eve_type__group__id": 429,
+            "quantity": 4125,
+            "submaterials-16679": [
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4051/icon?size=32\" alt=\"Nitrogen Fuel Block\"\u003E",
+                "material_eve_type__name": "Nitrogen Fuel Block",
+                "material_eve_type_id": 4051,
+                "material_eve_type__group__id": 1136,
+                "quantity": 5
+              },
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16659/icon?size=32\" alt=\"Carbon Polymers\"\u003E",
+                "material_eve_type__name": "Carbon Polymers",
+                "material_eve_type_id": 16659,
+                "material_eve_type__group__id": 428,
+                "quantity": 100,
+                "submaterials-16659": [
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4247/icon?size=32\" alt=\"Helium Fuel Block\"\u003E",
+                    "material_eve_type__name": "Helium Fuel Block",
+                    "material_eve_type_id": 4247,
+                    "material_eve_type__group__id": 1136,
+                    "quantity": 5
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16633/icon?size=32\" alt=\"Hydrocarbons\"\u003E",
+                    "material_eve_type__name": "Hydrocarbons",
+                    "material_eve_type_id": 16633,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16636/icon?size=32\" alt=\"Silicates\"\u003E",
+                    "material_eve_type__name": "Silicates",
+                    "material_eve_type_id": 16636,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  }
+                ]
+              },
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16662/icon?size=32\" alt=\"Platinum Technite\"\u003E",
+                "material_eve_type__name": "Platinum Technite",
+                "material_eve_type_id": 16662,
+                "material_eve_type__group__id": 428,
+                "quantity": 100,
+                "submaterials-16662": [
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4051/icon?size=32\" alt=\"Nitrogen Fuel Block\"\u003E",
+                    "material_eve_type__name": "Nitrogen Fuel Block",
+                    "material_eve_type_id": 4051,
+                    "material_eve_type__group__id": 1136,
+                    "quantity": 5
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16644/icon?size=32\" alt=\"Platinum\"\u003E",
+                    "material_eve_type__name": "Platinum",
+                    "material_eve_type_id": 16644,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16649/icon?size=32\" alt=\"Technetium\"\u003E",
+                    "material_eve_type__name": "Technetium",
+                    "material_eve_type_id": 16649,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16681/icon?size=32\" alt=\"Nanotransistors\"\u003E",
+            "material_eve_type__name": "Nanotransistors",
+            "material_eve_type_id": 16681,
+            "material_eve_type__group__id": 429,
+            "quantity": 495,
+            "submaterials-16681": [
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4051/icon?size=32\" alt=\"Nitrogen Fuel Block\"\u003E",
+                "material_eve_type__name": "Nitrogen Fuel Block",
+                "material_eve_type_id": 4051,
+                "material_eve_type__group__id": 1136,
+                "quantity": 5
+              },
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16661/icon?size=32\" alt=\"Sulfuric Acid\"\u003E",
+                "material_eve_type__name": "Sulfuric Acid",
+                "material_eve_type_id": 16661,
+                "material_eve_type__group__id": 428,
+                "quantity": 100,
+                "submaterials-16661": [
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4051/icon?size=32\" alt=\"Nitrogen Fuel Block\"\u003E",
+                    "material_eve_type__name": "Nitrogen Fuel Block",
+                    "material_eve_type_id": 4051,
+                    "material_eve_type__group__id": 1136,
+                    "quantity": 5
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16634/icon?size=32\" alt=\"Atmospheric Gases\"\u003E",
+                    "material_eve_type__name": "Atmospheric Gases",
+                    "material_eve_type_id": 16634,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16635/icon?size=32\" alt=\"Evaporite Deposits\"\u003E",
+                    "material_eve_type__name": "Evaporite Deposits",
+                    "material_eve_type_id": 16635,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  }
+                ]
+              },
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16662/icon?size=32\" alt=\"Platinum Technite\"\u003E",
+                "material_eve_type__name": "Platinum Technite",
+                "material_eve_type_id": 16662,
+                "material_eve_type__group__id": 428,
+                "quantity": 100,
+                "submaterials-16662": [
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4051/icon?size=32\" alt=\"Nitrogen Fuel Block\"\u003E",
+                    "material_eve_type__name": "Nitrogen Fuel Block",
+                    "material_eve_type_id": 4051,
+                    "material_eve_type__group__id": 1136,
+                    "quantity": 5
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16644/icon?size=32\" alt=\"Platinum\"\u003E",
+                    "material_eve_type__name": "Platinum",
+                    "material_eve_type_id": 16644,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16649/icon?size=32\" alt=\"Technetium\"\u003E",
+                    "material_eve_type__name": "Technetium",
+                    "material_eve_type_id": 16649,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  }
+                ]
+              },
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16667/icon?size=32\" alt=\"Neo Mercurite\"\u003E",
+                "material_eve_type__name": "Neo Mercurite",
+                "material_eve_type_id": 16667,
+                "material_eve_type__group__id": 428,
+                "quantity": 100,
+                "submaterials-16667": [
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4247/icon?size=32\" alt=\"Helium Fuel Block\"\u003E",
+                    "material_eve_type__name": "Helium Fuel Block",
+                    "material_eve_type_id": 4247,
+                    "material_eve_type__group__id": 1136,
+                    "quantity": 5
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16646/icon?size=32\" alt=\"Mercury\"\u003E",
+                    "material_eve_type__name": "Mercury",
+                    "material_eve_type_id": 16646,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16651/icon?size=32\" alt=\"Neodymium\"\u003E",
+                    "material_eve_type__name": "Neodymium",
+                    "material_eve_type_id": 16651,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/33359/icon?size=32\" alt=\"Photonic Metamaterials\"\u003E",
+            "material_eve_type__name": "Photonic Metamaterials",
+            "material_eve_type_id": 33359,
+            "material_eve_type__group__id": 429,
+            "quantity": 3600,
+            "submaterials-33359": [
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4312/icon?size=32\" alt=\"Oxygen Fuel Block\"\u003E",
+                "material_eve_type__name": "Oxygen Fuel Block",
+                "material_eve_type_id": 4312,
+                "material_eve_type__group__id": 1136,
+                "quantity": 5
+              },
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16655/icon?size=32\" alt=\"Crystallite Alloy\"\u003E",
+                "material_eve_type__name": "Crystallite Alloy",
+                "material_eve_type_id": 16655,
+                "material_eve_type__group__id": 428,
+                "quantity": 100,
+                "submaterials-16655": [
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4247/icon?size=32\" alt=\"Helium Fuel Block\"\u003E",
+                    "material_eve_type__name": "Helium Fuel Block",
+                    "material_eve_type_id": 4247,
+                    "material_eve_type__group__id": 1136,
+                    "quantity": 5
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16640/icon?size=32\" alt=\"Cobalt\"\u003E",
+                    "material_eve_type__name": "Cobalt",
+                    "material_eve_type_id": 16640,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16643/icon?size=32\" alt=\"Cadmium\"\u003E",
+                    "material_eve_type__name": "Cadmium",
+                    "material_eve_type_id": 16643,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  }
+                ]
+              },
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/33336/icon?size=32\" alt=\"Thulium Hafnite\"\u003E",
+                "material_eve_type__name": "Thulium Hafnite",
+                "material_eve_type_id": 33336,
+                "material_eve_type__group__id": 428,
+                "quantity": 100,
+                "submaterials-33336": [
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4246/icon?size=32\" alt=\"Hydrogen Fuel Block\"\u003E",
+                    "material_eve_type__name": "Hydrogen Fuel Block",
+                    "material_eve_type_id": 4246,
+                    "material_eve_type__group__id": 1136,
+                    "quantity": 5
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16648/icon?size=32\" alt=\"Hafnium\"\u003E",
+                    "material_eve_type__name": "Hafnium",
+                    "material_eve_type_id": 16648,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16653/icon?size=32\" alt=\"Thulium\"\u003E",
+                    "material_eve_type__name": "Thulium",
+                    "material_eve_type_id": 16653,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/11556/icon?size=32\" alt=\"Pulse Shield Emitter\"\u003E",
+        "material_eve_type__name": "Pulse Shield Emitter",
+        "material_eve_type_id": 11556,
+        "material_eve_type__group__id": 334,
+        "quantity": 300,
+        "submaterial": [
+          {
+            "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16670/icon?size=32\" alt=\"Crystalline Carbonide\"\u003E",
+            "material_eve_type__name": "Crystalline Carbonide",
+            "material_eve_type_id": 16670,
+            "material_eve_type__group__id": 429,
+            "quantity": 10890,
+            "submaterials-16670": [
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4247/icon?size=32\" alt=\"Helium Fuel Block\"\u003E",
+                "material_eve_type__name": "Helium Fuel Block",
+                "material_eve_type_id": 4247,
+                "material_eve_type__group__id": 1136,
+                "quantity": 5
+              },
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16655/icon?size=32\" alt=\"Crystallite Alloy\"\u003E",
+                "material_eve_type__name": "Crystallite Alloy",
+                "material_eve_type_id": 16655,
+                "material_eve_type__group__id": 428,
+                "quantity": 100,
+                "submaterials-16655": [
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4247/icon?size=32\" alt=\"Helium Fuel Block\"\u003E",
+                    "material_eve_type__name": "Helium Fuel Block",
+                    "material_eve_type_id": 4247,
+                    "material_eve_type__group__id": 1136,
+                    "quantity": 5
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16640/icon?size=32\" alt=\"Cobalt\"\u003E",
+                    "material_eve_type__name": "Cobalt",
+                    "material_eve_type_id": 16640,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16643/icon?size=32\" alt=\"Cadmium\"\u003E",
+                    "material_eve_type__name": "Cadmium",
+                    "material_eve_type_id": 16643,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  }
+                ]
+              },
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16659/icon?size=32\" alt=\"Carbon Polymers\"\u003E",
+                "material_eve_type__name": "Carbon Polymers",
+                "material_eve_type_id": 16659,
+                "material_eve_type__group__id": 428,
+                "quantity": 100,
+                "submaterials-16659": [
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4247/icon?size=32\" alt=\"Helium Fuel Block\"\u003E",
+                    "material_eve_type__name": "Helium Fuel Block",
+                    "material_eve_type_id": 4247,
+                    "material_eve_type__group__id": 1136,
+                    "quantity": 5
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16633/icon?size=32\" alt=\"Hydrocarbons\"\u003E",
+                    "material_eve_type__name": "Hydrocarbons",
+                    "material_eve_type_id": 16633,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16636/icon?size=32\" alt=\"Silicates\"\u003E",
+                    "material_eve_type__name": "Silicates",
+                    "material_eve_type_id": 16636,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16678/icon?size=32\" alt=\"Sylramic Fibers\"\u003E",
+            "material_eve_type__name": "Sylramic Fibers",
+            "material_eve_type_id": 16678,
+            "material_eve_type__group__id": 429,
+            "quantity": 2700,
+            "submaterials-16678": [
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4247/icon?size=32\" alt=\"Helium Fuel Block\"\u003E",
+                "material_eve_type__name": "Helium Fuel Block",
+                "material_eve_type_id": 4247,
+                "material_eve_type__group__id": 1136,
+                "quantity": 5
+              },
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16660/icon?size=32\" alt=\"Ceramic Powder\"\u003E",
+                "material_eve_type__name": "Ceramic Powder",
+                "material_eve_type_id": 16660,
+                "material_eve_type__group__id": 428,
+                "quantity": 100,
+                "submaterials-16660": [
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4246/icon?size=32\" alt=\"Hydrogen Fuel Block\"\u003E",
+                    "material_eve_type__name": "Hydrogen Fuel Block",
+                    "material_eve_type_id": 4246,
+                    "material_eve_type__group__id": 1136,
+                    "quantity": 5
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16635/icon?size=32\" alt=\"Evaporite Deposits\"\u003E",
+                    "material_eve_type__name": "Evaporite Deposits",
+                    "material_eve_type_id": 16635,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16636/icon?size=32\" alt=\"Silicates\"\u003E",
+                    "material_eve_type__name": "Silicates",
+                    "material_eve_type_id": 16636,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  }
+                ]
+              },
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16665/icon?size=32\" alt=\"Hexite\"\u003E",
+                "material_eve_type__name": "Hexite",
+                "material_eve_type_id": 16665,
+                "material_eve_type__group__id": 428,
+                "quantity": 100,
+                "submaterials-16665": [
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4051/icon?size=32\" alt=\"Nitrogen Fuel Block\"\u003E",
+                    "material_eve_type__name": "Nitrogen Fuel Block",
+                    "material_eve_type_id": 4051,
+                    "material_eve_type__group__id": 1136,
+                    "quantity": 5
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16641/icon?size=32\" alt=\"Chromium\"\u003E",
+                    "material_eve_type__name": "Chromium",
+                    "material_eve_type_id": 16641,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16644/icon?size=32\" alt=\"Platinum\"\u003E",
+                    "material_eve_type__name": "Platinum",
+                    "material_eve_type_id": 16644,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16683/icon?size=32\" alt=\"Ferrogel\"\u003E",
+            "material_eve_type__name": "Ferrogel",
+            "material_eve_type_id": 16683,
+            "material_eve_type__group__id": 429,
+            "quantity": 57,
+            "submaterials-16683": [
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4246/icon?size=32\" alt=\"Hydrogen Fuel Block\"\u003E",
+                "material_eve_type__name": "Hydrogen Fuel Block",
+                "material_eve_type_id": 4246,
+                "material_eve_type__group__id": 1136,
+                "quantity": 5
+              },
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16665/icon?size=32\" alt=\"Hexite\"\u003E",
+                "material_eve_type__name": "Hexite",
+                "material_eve_type_id": 16665,
+                "material_eve_type__group__id": 428,
+                "quantity": 100,
+                "submaterials-16665": [
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4051/icon?size=32\" alt=\"Nitrogen Fuel Block\"\u003E",
+                    "material_eve_type__name": "Nitrogen Fuel Block",
+                    "material_eve_type_id": 4051,
+                    "material_eve_type__group__id": 1136,
+                    "quantity": 5
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16641/icon?size=32\" alt=\"Chromium\"\u003E",
+                    "material_eve_type__name": "Chromium",
+                    "material_eve_type_id": 16641,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16644/icon?size=32\" alt=\"Platinum\"\u003E",
+                    "material_eve_type__name": "Platinum",
+                    "material_eve_type_id": 16644,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  }
+                ]
+              },
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16666/icon?size=32\" alt=\"Hyperflurite\"\u003E",
+                "material_eve_type__name": "Hyperflurite",
+                "material_eve_type_id": 16666,
+                "material_eve_type__group__id": 428,
+                "quantity": 100,
+                "submaterials-16666": [
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4051/icon?size=32\" alt=\"Nitrogen Fuel Block\"\u003E",
+                    "material_eve_type__name": "Nitrogen Fuel Block",
+                    "material_eve_type_id": 4051,
+                    "material_eve_type__group__id": 1136,
+                    "quantity": 5
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16642/icon?size=32\" alt=\"Vanadium\"\u003E",
+                    "material_eve_type__name": "Vanadium",
+                    "material_eve_type_id": 16642,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16652/icon?size=32\" alt=\"Promethium\"\u003E",
+                    "material_eve_type__name": "Promethium",
+                    "material_eve_type_id": 16652,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  }
+                ]
+              },
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16669/icon?size=32\" alt=\"Ferrofluid\"\u003E",
+                "material_eve_type__name": "Ferrofluid",
+                "material_eve_type_id": 16669,
+                "material_eve_type__group__id": 428,
+                "quantity": 100,
+                "submaterials-16669": [
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4246/icon?size=32\" alt=\"Hydrogen Fuel Block\"\u003E",
+                    "material_eve_type__name": "Hydrogen Fuel Block",
+                    "material_eve_type_id": 4246,
+                    "material_eve_type__group__id": 1136,
+                    "quantity": 5
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16648/icon?size=32\" alt=\"Hafnium\"\u003E",
+                    "material_eve_type__name": "Hafnium",
+                    "material_eve_type_id": 16648,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16650/icon?size=32\" alt=\"Dysprosium\"\u003E",
+                    "material_eve_type__name": "Dysprosium",
+                    "material_eve_type_id": 16650,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  }
+                ]
+              },
+              {
+                "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/17960/icon?size=32\" alt=\"Prometium\"\u003E",
+                "material_eve_type__name": "Prometium",
+                "material_eve_type_id": 17960,
+                "material_eve_type__group__id": 428,
+                "quantity": 100,
+                "submaterials-17960": [
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/4312/icon?size=32\" alt=\"Oxygen Fuel Block\"\u003E",
+                    "material_eve_type__name": "Oxygen Fuel Block",
+                    "material_eve_type_id": 4312,
+                    "material_eve_type__group__id": 1136,
+                    "quantity": 5
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16643/icon?size=32\" alt=\"Cadmium\"\u003E",
+                    "material_eve_type__name": "Cadmium",
+                    "material_eve_type_id": 16643,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  },
+                  {
+                    "portrait": "\u003Cimg class=\"type-render rounded-circle\" src=\"https://images.evetech.net/types/16652/icon?size=32\" alt=\"Promethium\"\u003E",
+                    "material_eve_type__name": "Promethium",
+                    "material_eve_type_id": 16652,
+                    "material_eve_type__group__id": 427,
+                    "quantity": 100
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
