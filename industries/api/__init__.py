@@ -3,7 +3,7 @@ from ninja.security import django_auth
 
 from django.conf import settings
 
-from industries.api import core
+from industries.api import core, industry
 from industries.hooks import get_extension_logger
 
 logger = get_extension_logger(__name__)
@@ -19,3 +19,6 @@ api = NinjaAPI(
 
 # Add the character endpoints
 core.setup(api)
+
+# Add the industry endpoints
+industry.setup(api)
