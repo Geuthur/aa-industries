@@ -6,7 +6,6 @@ from django.utils.translation import gettext_lazy as _
 
 # Alliance Auth
 from esi.models import Token
-from eveuniverse.models import EveType
 
 from industries.managers import IndustriesManager
 
@@ -17,7 +16,18 @@ class General(models.Model):
     class Meta:
         abstract = True  # Please Remove this to activate this model
         managed = False
-        permissions = (("basic_access", _("Can access this app")),)
+        permissions = (
+            ("basic_access", _("Can access the Industries module")),
+            ("manage_access", _("Can manage Industries module")),
+            ("corp_access", _("Can access own Corporation")),
+            ("corp_character_access", _("Can access other Character's for own Corp")),
+            ("ally_access", _("Can access own Alliance")),
+            (
+                "ally_character_access",
+                _("Can access other Character's for own Alliance"),
+            ),
+            ("admin_access", _("Can access all Alliance/Corporation/Character")),
+        )
         default_permissions = ()
 
 
@@ -41,17 +51,3 @@ class Industries(models.Model):
         return f"{self.token.character_name} - {self.token.character_id}"
 
     objects = IndustriesManager()
-
-
-class Reactions(models.Model):
-    reaction = models.ForeignKey(
-        EveType, on_delete=models.CASCADE, related_name="reactions"
-    )
-
-    reaction_blueprint = models.ForeignKey(
-        EveType, on_delete=models.CASCADE, related_name="reaction_blueprints", null=True
-    )
-
-    class Meta:
-        default_permissions = ()
-        verbose_name = _("Reaction")
