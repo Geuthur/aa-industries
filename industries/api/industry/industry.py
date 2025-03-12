@@ -4,6 +4,7 @@ from typing import Any
 
 from ninja import NinjaAPI
 
+from django.shortcuts import render
 from django.utils.translation import gettext as _
 from eveuniverse.models import (
     EveIndustryActivityMaterial,
@@ -65,18 +66,21 @@ class IndustryApiEndpoints:
                 if product is not None:
                     is_submaterial = True
 
+                portait = lazy.get_type_icon_url(
+                    type_id=material.material_eve_type.id,
+                    size=32,
+                    type_name=material.material_eve_type.name,
+                    as_html=True,
+                )
+
                 materials_data.append(
                     {
-                        "portrait": lazy.get_type_icon_url(
-                            type_id=material.material_eve_type.id,
-                            size=32,
-                            type_name=material.material_eve_type.name,
-                            as_html=True,
-                        ),
-                        "material_eve_type__name": material.material_eve_type.name,
+                        "material": f"{portait} {material.material_eve_type.name}",
                         "material_eve_type_id": material.material_eve_type.id,
                         "quantity": material.quantity,
                         "is_submaterial": is_submaterial,
+                        "in_stock": 0,
+                        "price": 0,
                     }
                 )
 
@@ -158,11 +162,13 @@ class IndustryApiEndpoints:
             tags=["Industry"],
         )
         # pylint: disable=too-many-locals
-        def get_industry_material(
+        def get_industry_material2(
             request, material_id: int, quantity: int, category: str = "production"
         ):
             if not request.user.has_perm("industries.basic_access"):
                 return 403, _("Permission Denied")
+
+            unique_id = request.GET.get("unique_id", "No ID Found")
 
             material = EveType.objects.get(id=material_id)
             material_product = get_industry_product_quantity(material)
@@ -215,30 +221,24 @@ class IndustryApiEndpoints:
                     total_quantity = math.ceil(total_quantity)
 
                     submaterial_dict = {
-                        "portrait": lazy.get_type_icon_url(
-                            type_id=submaterial.material_eve_type.id,
-                            size=32,
-                            type_name=submaterial.material_eve_type.name,
-                            as_html=True,
-                        ),
-                        "material_eve_type__name": submaterial.material_eve_type.name,
+                        "material_eve_type_name": submaterial.material_eve_type.name,
                         "material_eve_type_id": submaterial.material_eve_type.id,
                         "quantity": total_quantity,
                         "is_submaterial": is_submaterial,
+                        "in_stock": 0,
+                        "price": 0,
                     }
                     submaterial_data.append(submaterial_dict)
 
-            material_dict = {
-                "portrait": lazy.get_type_icon_url(
-                    type_id=material_id,
-                    size=32,
-                    type_name=material.name,
-                    as_html=True,
-                ),
+            context = {
+                "unique_id": unique_id,
                 "material_eve_type__name": material.name,
                 "material_eve_type_id": material_id,
                 "quantity": quantity,
-                "submaterial": submaterial_data,
+                "submaterials": submaterial_data,
             }
-
-            return material_dict
+            return render(
+                request=request,
+                template_name="industries/partials/table/submaterials.html",
+                context=context,
+            )

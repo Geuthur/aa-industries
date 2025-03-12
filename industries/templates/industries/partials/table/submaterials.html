@@ -1,0 +1,19 @@
+{% load i18n %}
+{% load bootstrap %}
+{% load evelinks %}
+
+{% for submaterial in submaterials %}
+    <tr id="{{ unique_id }}" class="submaterials-row" data-original-quantity="{{ submaterial.quantity }}">
+        <td id="{{ unique_id }}" class="submaterials-td" data-padding="0">
+            {% if submaterial.is_submaterial %}
+            <button class="btn btn-secondary industries-collapse" data-mtypeid="{{ submaterial.material_eve_type_id }}" data-quantity="{{ submaterial.quantity }}">
+                <i class="fas fa-chevron-right fa-sm"></i>
+            </button>
+            {% endif %}
+            <img src="{{ submaterial.material_eve_type_id|type_icon_url }}"> {{ submaterial.material_eve_type_name }}
+        </td>
+        <td class="quantity">{{ submaterial.quantity }}</td>
+        <td><input type="number" id="instock-{{ submaterial.material_eve_type_id }}" class="form-control instock-input w-25" value="{{ submaterial.in_stock }}" min="0" /></td>
+        <td>{{ submaterial.price }}</td>
+    </tr>
+{% endfor %}
