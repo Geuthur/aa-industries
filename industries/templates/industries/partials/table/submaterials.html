@@ -1,6 +1,7 @@
 {% load i18n %}
 {% load bootstrap %}
 {% load evelinks %}
+{% load industries %}
 
 {% for submaterial in submaterials %}
     <tr id="{{ unique_id }}" class="submaterials-row" data-original-quantity="{{ submaterial.quantity }}">
@@ -12,7 +13,7 @@
             {% endif %}
             <img src="{{ submaterial.material_eve_type_id|type_icon_url }}"> {{ submaterial.material_eve_type_name }}
         </td>
-        <td class="quantity">{{ submaterial.quantity }}</td>
+        <td class="quantity">{{ submaterial.quantity|intdot }}</td>
         <td><input type="number" id="instock-{{ submaterial.material_eve_type_id }}" class="form-control instock-input w-25" value="{{ submaterial.in_stock }}" min="0" /></td>
         <td>{{ submaterial.price }}</td>
     </tr>
