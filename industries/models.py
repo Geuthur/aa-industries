@@ -14,7 +14,6 @@ class General(models.Model):
     """General model for app permissions"""
 
     class Meta:
-        abstract = True  # Please Remove this to activate this model
         managed = False
         permissions = (
             ("basic_access", _("Can access the Industries module")),
