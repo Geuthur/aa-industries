@@ -11,10 +11,11 @@ from industries.managers import IndustriesManager
 
 
 class General(models.Model):
-    """General model for app permissions"""
+    """A model defining permissions for Industries."""
 
     class Meta:
         managed = False
+        default_permissions = ()
         permissions = (
             ("basic_access", _("Can access the Industries module")),
             ("manage_access", _("Can manage Industries module")),
@@ -27,7 +28,6 @@ class General(models.Model):
             ),
             ("admin_access", _("Can access all Alliance/Corporation/Character")),
         )
-        default_permissions = ()
 
 
 class Industries(models.Model):
