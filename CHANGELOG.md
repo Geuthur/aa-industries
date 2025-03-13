@@ -5,9 +5,20 @@
 ### Added
 
 - API System
-  - `get_typematerial`
-  - `get_industriyactivity`
-  - `get_blueprint_industry`
+  - Search API
+    - `eveindustryactivitymaterial`
+    - `evetypematerial`
+    - `eveindustryactivityproduct`
+  - Industry API
+    - `get_blueprint_industry`
+    - `get_blueprint_industry_summary`
+    - `get_industry_material`
+  - Helpers
+    - `fix_fullerides`
+    - `get_blueprint_from_eve_type`
+    - `get_or_create_product_or_none`
+    - `get_blueprint_materials`
+    - `get_or_create_market_price`
 - Lazy Functions
   - `get_character_portrait_url`
   - `get_corporation_logo_url`
@@ -15,6 +26,13 @@
   - `get_type_icon_url`
 - Modal System
   - Standard Modal
+- Javascript
+  - Blueprint Search
+  - Industrymaterials
+  - Modal System
+- Django Commands
+  - `industries_update_industry`
+  - `industries_update_prices`
 
 ## [0.0.2] - 2025-02-06
 
