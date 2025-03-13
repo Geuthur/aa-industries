@@ -13,7 +13,8 @@ from eveuniverse.models import (
 
 from industries.api.helpers import (
     get_blueprint_materials,
-    get_industry_product_quantity,
+    get_or_create_market_price,
+    get_or_create_product_or_none,
 )
 from industries.helpers import lazy
 from industries.hooks import get_extension_logger
@@ -60,11 +61,10 @@ class IndustryApiEndpoints:
                 return 404, _("Materials not found")
 
             for material in materials:
-                product = get_industry_product_quantity(material.material_eve_type)
-
-                is_submaterial = False
-                if product is not None:
-                    is_submaterial = True
+                is_submaterial = True
+                product, __ = get_or_create_product_or_none(material.material_eve_type)
+                if product is None:
+                    is_submaterial = False
 
                 portait = lazy.get_type_icon_url(
                     type_id=material.material_eve_type.id,
@@ -73,6 +73,19 @@ class IndustryApiEndpoints:
                     as_html=True,
                 )
 
+                price, __ = get_or_create_market_price(
+                    eve_type=material.material_eve_type,
+                )
+                logger.debug(
+                    "Price for %s Q:%s: %s",
+                    material.material_eve_type,
+                    material.quantity,
+                    price,
+                )
+
+                # Get Total Price
+                total_price = price * material.quantity
+
                 materials_data.append(
                     {
                         "material": f"{portait} {material.material_eve_type.name}",
@@ -80,7 +93,8 @@ class IndustryApiEndpoints:
                         "quantity": material.quantity,
                         "is_submaterial": is_submaterial,
                         "in_stock": 0,
-                        "price": 0,
+                        "single_price": price,
+                        "price": total_price,
                     }
                 )
 
@@ -117,28 +131,21 @@ class IndustryApiEndpoints:
                 quantity = material.quantity
                 material_name = material.material_eve_type.name
 
-                blueprint = get_industry_product_quantity(material.material_eve_type)
+                product, __ = get_or_create_product_or_none(material.material_eve_type)
 
-                if blueprint is not None:
+                material_quantity = quantity / product.quantity
+                # Round up number
+                material_quantity = math.ceil(material_quantity)
 
+                if product is not None:
                     submaterials = EveIndustryActivityMaterial.objects.filter(
-                        eve_type=blueprint.eve_type, activity_id__in=[1, 11]
+                        eve_type=product.eve_type, activity_id__in=[1, 11]
                     )
 
                     for submaterial in submaterials:
-                        product = get_industry_product_quantity(
-                            submaterial.material_eve_type
-                        )
-                        if product:
-                            # If the product quantity is less than the material quantity then we need 1 full product material
-                            if material.quantity < product.quantity:
-                                total_quantity = submaterial.quantity * 1
-                            else:
-                                total_quantity = (
-                                    submaterial.quantity * quantity / product.quantity
-                                )
-                        else:
-                            total_quantity = submaterial.quantity * quantity
+                        get_or_create_product_or_none(submaterial.material_eve_type)
+
+                        total_quantity = submaterial.quantity * material_quantity
 
                         material_id = submaterial.material_eve_type.id
                         material_name = submaterial.material_eve_type.name
@@ -162,7 +169,7 @@ class IndustryApiEndpoints:
             tags=["Industry"],
         )
         # pylint: disable=too-many-locals
-        def get_industry_material2(
+        def get_industry_material(
             request, material_id: int, quantity: int, category: str = "production"
         ):
             if not request.user.has_perm("industries.basic_access"):
@@ -171,7 +178,7 @@ class IndustryApiEndpoints:
             unique_id = request.GET.get("unique_id", "No ID Found")
 
             material = EveType.objects.get(id=material_id)
-            material_product = get_industry_product_quantity(material)
+            material_product, __ = get_or_create_product_or_none(material)
 
             if material_product is None:
                 return 404, _("Material not found")
@@ -191,34 +198,26 @@ class IndustryApiEndpoints:
                 blueprint=material_product.eve_type, activity=activity
             )
 
+            material_quantity = quantity / material_product.quantity
+            # Round up number
+            material_quantity = math.ceil(material_quantity)
+
             if submaterials is not None:
                 for submaterial in submaterials:
-                    product = get_industry_product_quantity(
+                    is_submaterial = True
+                    product, __ = get_or_create_product_or_none(
                         submaterial.material_eve_type
                     )
-                    is_submaterial = False
-                    if product:
-                        # TODO - Better way to handle this? only checks if the ressource exist and create if not
-                        # Check if there is a submaterials from product
-                        materials = get_blueprint_materials(
-                            blueprint=product.eve_type,
-                            activity=activity,
-                        )
-                        if materials is not None:
-                            is_submaterial = True
+                    if product is None:
+                        is_submaterial = False
 
-                        # If the product quantity is less than the material quantity then we need 1 full product material
-                        if submaterial.quantity < product.quantity:
-                            total_quantity = submaterial.quantity * 1
-                        else:
-                            total_quantity = (
-                                submaterial.quantity * quantity / product.quantity
-                            )
-                    else:
-                        total_quantity = submaterial.quantity * quantity
+                    total_quantity = submaterial.quantity * material_quantity
 
-                    # Round up number
-                    total_quantity = math.ceil(total_quantity)
+                    price, __ = get_or_create_market_price(
+                        eve_type=submaterial.material_eve_type,
+                    )
+
+                    total_price = price * total_quantity
 
                     submaterial_dict = {
                         "material_eve_type_name": submaterial.material_eve_type.name,
@@ -226,7 +225,8 @@ class IndustryApiEndpoints:
                         "quantity": total_quantity,
                         "is_submaterial": is_submaterial,
                         "in_stock": 0,
-                        "price": 0,
+                        "single_price": price,
+                        "price": total_price,
                     }
                     submaterial_data.append(submaterial_dict)
 

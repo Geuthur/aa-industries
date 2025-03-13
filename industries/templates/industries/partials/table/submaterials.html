@@ -4,7 +4,7 @@
 {% load industries %}
 
 {% for submaterial in submaterials %}
-    <tr id="{{ unique_id }}" class="submaterials-row" data-original-quantity="{{ submaterial.quantity }}">
+    <tr id="{{ unique_id }}" class="submaterials-row" data-original-quantity="{{ submaterial.quantity }}" data-original-price="{{ submaterial.single_price }}">
         <td id="{{ unique_id }}" class="submaterials-td" data-padding="0">
             {% if submaterial.is_submaterial %}
             <button class="btn btn-secondary industries-collapse" data-mtypeid="{{ submaterial.material_eve_type_id }}" data-quantity="{{ submaterial.quantity }}">
@@ -14,7 +14,7 @@
             <img src="{{ submaterial.material_eve_type_id|type_icon_url }}"> {{ submaterial.material_eve_type_name }}
         </td>
         <td class="quantity">{{ submaterial.quantity|intdot }}</td>
-        <td><input type="number" id="instock-{{ submaterial.material_eve_type_id }}" class="form-control instock-input w-25" value="{{ submaterial.in_stock }}" min="0" /></td>
-        <td>{{ submaterial.price }}</td>
+        <td><input type="number" id="instock-{{ submaterial.material_eve_type_id }}" class="form-control instock-input w-25" value="" min="0" /></td>
+        <td class="price">{{ submaterial.price|intdot }} ISK</td>
     </tr>
 {% endfor %}

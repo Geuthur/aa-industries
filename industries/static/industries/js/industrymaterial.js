@@ -55,15 +55,18 @@ $(document).ready(() => {
             {
                 data: 'price',
                 orderable: false,
-                render: function (data) {
-                    return data;
-                }
+                render: function (data, type, row) {
+                    var price = parseInt(data);
+                    return price.toLocaleString() + ' ISK';
+                },
+                className: 'price',
             }
 
         ],
         rowCallback: function (row, data) {
             $(row).attr('id', `material`);
             $(row).data('original-quantity', data.quantity); // Store the original quantity
+            $(row).data('original-price', data.single_price); // Store the original price
         },
         order: [[0, 'asc']],
         paging: false,
@@ -115,7 +118,7 @@ $(document).ready(() => {
                     }
 
                     // Get the current submaterial td group
-                    const submaterialTd = newrow.find('.submaterials-td')
+                    const submaterialTd = newrow.find('.submaterials-td');
 
                     // Set the padding for the current submaterial td group
                     const newPaddingLeft = submaterialPrevCount + 2;
@@ -139,11 +142,14 @@ $(document).ready(() => {
         const newInStock = parseInt(input.val(), 10) || 0;
         const row = input.closest('tr');
         const quantityCell = row.find('.quantity');
-        // Store the original quantity
+        const priceCell = row.find('.price');
+        // Store the original quantity & price
         const originalQuantity = row.data('original-quantity');
+        const originalPrice = row.data('original-price');
         // Ensure the new quantity is at least 0
         const newQuantity = Math.max(originalQuantity - newInStock, 0);
 
         quantityCell.text(newQuantity.toLocaleString());
+        priceCell.text((newQuantity * originalPrice).toLocaleString() + ' ISK');
     });
 });

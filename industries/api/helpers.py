@@ -1,8 +1,12 @@
+import math
+
 from django.db.models import Q
+from django.utils import timezone
 from django.utils.translation import gettext as _
 from eveuniverse.models import (
     EveIndustryActivityMaterial,
     EveIndustryActivityProduct,
+    EveMarketPrice,
     EveType,
 )
 
@@ -34,52 +38,43 @@ def get_blueprint_from_eve_type(eve_type: EveType) -> EveType:
             eve_type = fix_fullerides(eve_type)
 
     # TODO - Find a way without bad hardcoded values
-    if eve_type.eve_group.eve_category.id == 7:  # Module Category
-        q_filter = q_filter & Q(name=f"{eve_type.name} Blueprint")
+    q_filter = q_filter & Q(name=f"{eve_type.name} Blueprint")
 
-    q_filter = q_filter & Q(name__contains=eve_type.name)
-
-    blueprint = EveType.objects.filter(q_filter).first()
+    blueprint = EveType.objects.filter(q_filter, published=True).first()
 
     if blueprint is None:
         return None
     return blueprint
 
 
-def get_industry_product_quantity(material: EveType) -> EveIndustryActivityProduct:
-    """Get the quantity of a Material Blueprint or create if not exists"""
-    # Skip some groups
-    if (
-        material.eve_group.id in [18, 1136, 427]
-        or material.eve_group.eve_category.id == 43
-    ):
-        return None
-
+def get_or_create_product_or_none(
+    material: EveType,
+) -> tuple[EveIndustryActivityMaterial | None, bool]:
+    """Get or create a EveIndustryActivityProduct Product from Blueprint or return None if not exist"""
     try:
         product = EveIndustryActivityProduct.objects.get(
             product_eve_type=material, eve_type__published=True
         )
-    except EveIndustryActivityProduct.DoesNotExist as exc:
-        logger.debug(
-            "Product not found try to create for: %s",
-            material,
-        )
+        return product, False
+    except EveIndustryActivityProduct.DoesNotExist:
         blueprint = get_blueprint_from_eve_type(material)
 
+        if blueprint is None:
+            return None, False
+
+        logger.debug(
+            "Product not found try to create for: %s, Blueprint %s",
+            material,
+            blueprint,
+        )
         EveIndustryActivityProduct.objects.update_or_create_api(eve_type=blueprint)
         try:
             product = EveIndustryActivityProduct.objects.get(
                 product_eve_type=material, eve_type__published=True
             )
         except EveIndustryActivityProduct.DoesNotExist:
-            raise ValueError(_("Product not found")) from exc
-    except EveIndustryActivityProduct.MultipleObjectsReturned:
-        logger.debug(
-            "Multiple products found for: %s",
-            material,
-        )
-        product = None
-    return product
+            return None, False
+    return product, True
 
 
 def get_blueprint_materials(
@@ -108,3 +103,24 @@ def get_blueprint_materials(
         if not materials.exists():
             return None
     return materials
+
+
+def get_or_create_market_price(
+    eve_type: EveType,
+) -> float:
+    """Get or Create a Market Price for a Eve Type"""
+    try:
+        marketprice = EveMarketPrice.objects.get(eve_type=eve_type)
+        price = marketprice.average_price
+    except EveMarketPrice.DoesNotExist:
+        EveMarketPrice.objects.create(
+            eve_type=eve_type,
+            average_price=0,
+            adjusted_price=0,
+            updated_at=timezone.now() - timezone.timedelta(days=1),
+        )
+        price = 0
+        return price, True
+
+    price = math.ceil(price)
+    return price, False
