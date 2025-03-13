@@ -6,7 +6,7 @@ requires = [
 
 [project]
 name = "aa-industries"
-description = "Here is your description"
+description = "A Industry Tool for Alliance Auth"
 readme = "README.md"
 license = { file = "LICENSE" }
 authors = [
