@@ -112,6 +112,9 @@ def get_or_create_market_price(
     try:
         marketprice = EveMarketPrice.objects.get(eve_type=eve_type)
         price = marketprice.average_price
+        if price is None:
+            price = 0
+
     except EveMarketPrice.DoesNotExist:
         EveMarketPrice.objects.create(
             eve_type=eve_type,
